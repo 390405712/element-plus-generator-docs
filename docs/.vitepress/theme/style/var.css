@@ -1,0 +1,106 @@
+:root {
+  /* 标题 */
+  --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-background: linear-gradient( 135deg, #409eff 10%, #D939CD 100%);
+
+  /* 图标背景 */
+  --vp-home-hero-image-background-image: linear-gradient( 135deg, #409eff 10%, #D939CD 100%);
+  --vp-home-hero-image-filter: blur(150px);
+
+   /* brand按钮 */
+   --vp-button-brand-border: transparent;
+   --vp-button-brand-text: #F6CEEC;
+   --vp-button-brand-bg: #D939CD;
+
+   --vp-button-brand-hover-border: #F6CEEC;
+   --vp-button-brand-hover-text: #fff;
+   --vp-button-brand-hover-bg: #D939CD;
+
+   --vp-button-brand-active-border: #F6CEEC;
+
+   --vp-c-green:#409eff;
+   --vp-c-green-light:#79bbff;
+   --vp-c-green-lighter:#a0cfff;
+   --vp-c-green-dark:#409eff;
+   --vp-c-green-darker:#3375b9;
+}
+
+.VPImage{
+  border-radius: 50%;
+}
+.vp-raw{
+  margin-top: 16px;
+  border: 1px solid #dcdfe6;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+.example{
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    padding:20px
+}
+
+details > summary:first-of-type {
+    font-size: 14px;
+    padding: 8px 0;
+    cursor: pointer;
+    color: #1989fa;
+}
+
+#VPSidebarNav h2{
+  font-size: 1rem!important;
+  font-weight: 700!important;
+  margin-bottom: 8px!important;
+  line-height: 24px!important;
+}
+#VPSidebarNav a{
+  padding: 10px 16px;
+  line-height: 1.5;
+  font-size: .9rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+#VPSidebarNav a .text{
+  padding: 0!important;
+}
+
+.VPSidebarItem.is-active a{
+  background-color: rgba(64, 158, 255, 0.1);
+  border-radius: 8px;
+}
+/*
+.VPNavBarMenu.menu{
+  width: 100%;
+  display: flex;
+}
+.VPNavBarMenu.menu a:nth-of-type(1){
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+} */
+
+@media (min-width: 1300px) {
+  .code{
+    display: flex;
+    gap: 10px;
+    height: calc(100vh - 150px);
+    flex-direction: row-reverse;
+  }
+
+  .code >div{
+    width: 50%;
+    flex-shrink: 0;
+    margin-bottom: 0!important;
+  }
+
+  .VPDoc .container .content{
+    padding: 0;
+  }
+  :root{
+    /* --vp-layout-max-width: 1900px; */
+  }
+}
+.vp-raw{
+  overflow: auto;
+}

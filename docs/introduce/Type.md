@@ -1,0 +1,186 @@
+# 生成器类型
+
+## 入口
+
+```ts
+import FormGenerator from './FormGenerator';
+import TableGenerator from './TableGenerator';
+import * as GeneratorUtils from './utils';
+export { FormGenerator, TableGenerator, GeneratorUtils };
+```
+
+
+## 关于TableGenerator
+```ts
+
+/**
+ * @description: 表格生成配置
+ * @param data 表格数据
+ * @param tableOption 表格生成配置
+ * @param loading 是否加载动画
+ */
+export declare interface tableAttrs {
+  [key: string]: any
+  data: Record<string, any>[]
+  tableOption: tableOption[]
+  loading?: boolean
+}
+
+/**
+ * @description: 表格生成配置
+ * @param prop 表格列key
+ * @param label 表格列名称
+ * @param type 列的类型
+ */
+export declare interface tableOption {
+  [key: string]: any
+  type?: 'selection' | 'index' | 'expand'
+  prop?: string
+  label?: string
+  slot?: Record<string, (() => JSX.Element | string | void) | string>
+  children?: tableOption[]
+}
+
+export declare type option = {
+  [key: string]: any
+  label?: string
+  value: string,
+  slot: Record<string, (() => JSX.Element | string | void) | string>
+} | {
+  [key: string]: any
+  label: string
+  value: string,
+  slot?: Record<string, (() => JSX.Element | string | void) | string>
+}
+```
+
+## 关于FormGenerator
+```ts
+export declare type RefFormGeneratorObj = {
+  resetFields: () => void
+  clearValidate: () => void
+  validate: (val?: string[]) => Promise<boolean>
+  validateField: (val?: string) => Promise<boolean>
+  submit: () => void
+  reset: () => void
+}
+
+export declare type RefFormGenerator = () => RefFormGeneratorObj
+
+export declare type rule = {
+  required?: boolean
+  message?: string
+  trigger: string
+  field: string
+  validator?: (rule: any, value: string) => Promise<void>
+  formOption: formOption[]
+};
+
+/**
+ * @description: 表单生成配置
+ * @param model 表单数据对象
+ * @param formOption 表单生成配置
+ * @param rules 校验对象
+ * @param noFooter 表单底部按钮
+ * @param type search:搜索表单 dialog:dialog表单
+ * @param column 判断展开收起的长度（包括搜索按钮那个容器）
+ * @param slot 插槽（默认插槽是确定、取消按钮那块区域）
+ */
+export declare interface formAttrs {
+  [key: string]: any
+  model: Record<string, any>
+  formOption: formOption[]
+  rules?: rule[]
+  noFooter?: boolean
+  type?: 'search' | 'dialog'
+  column?: number
+  slot?: Record<string, (() => JSX.Element | string | void) | string>
+}
+
+/**
+ * @description: 表单生成配置
+ * @param type 表单控件类型
+ * @param show 是否显示
+ * @param formItem form下formItem属性
+ * @param control 控件属性
+ */
+export declare interface formOption {
+  type: 'input' | 'input-number' | 'select' | 'tree-select' | 'cascader' | 'radio' | 'radio-button' | 'checkbox' | 'checkbox-button' | 'datetime' | 'time' | 'switch' | 'upload' | 'txt' | 'slot'
+  show?: boolean
+  formItem: {
+    [key: string]: any
+    prop: string,
+    label?: string,
+    rules?: {
+      [key: string]: any
+      message?: string
+      trigger?: 'blur' | 'change'
+      validator?: RegExp | ((rule: rule, value: string | boolean) => Promise<void>),
+    }
+    style?: any
+  }
+  control?: {
+    [key: string]: any
+    option?: option[]
+    slot?: Record<string, (() => JSX.Element | string | void) | string>
+  }
+}
+
+/**
+ * @description: 表格生成配置
+ * @param data 表格数据
+ * @param tableOption 表格生成配置
+ * @param loading 是否加载动画
+ */
+export declare interface tableAttrs {
+  [key: string]: any
+  data: Record<string, any>[]
+  tableOption: tableOption[]
+  loading?: boolean
+}
+
+export declare type option = {
+  [key: string]: any
+  label?: string
+  value: string,
+  slot: Record<string, (() => JSX.Element | string | void) | string>
+} | {
+  [key: string]: any
+  label: string
+  value: string,
+  slot?: Record<string, (() => JSX.Element | string | void) | string>
+}
+```
+
+
+
+## GeneratorUtils
+给`FormGenerator`用的方法
+```ts
+import type { FormRules } from 'element-plus';
+import type { option, formOption, rule } from './type.d';//-->关于FormGenerator
+/**
+ * @description: 生成表单控件使用的option
+ * @param arr 原始list
+ * @param label 赋值label的key名
+ * @param value 赋值value的key名
+ * @param custom 自定义需要合并的对象
+ */
+export declare const getOption: (arr: Record<string, string>[] | string[], label: string, value: string, custom?: {}) => option[];
+/**
+ * @description: 获取表单配置中指定的对象
+ * @param formOption 表单配置
+ * @param key 指定的key
+ */
+export declare const getLabel: (formOption: formOption[], key: string) => formOption;
+/**
+ * @description: 生成校验配置
+ * @param formOption 表单配置
+ * @param omit 不需要验证的key
+ */
+export declare const getRules: (formOption: formOption[], omit?: string[]) => FormRules;
+export declare const CommonValidator: {
+    checkIphoneNum: (rule: rule, value: string | boolean) => Promise<void>;
+};
+
+```

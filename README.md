@@ -1,39 +1,25 @@
-# element-plus-generator-docs
+# VitePress 中文文档
 
-#### 介绍
-{**以下是 Gitee 平台说明，您可以替换此简介**
-Gitee 是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用 Gitee 实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+## 📝 如何参与贡献
 
-#### 软件架构
-软件架构说明
+**工作流介绍：** 英文文档的所在 [请点击此链接](https://github.com/vuejs/vitepress/tree/master/docs)，我们会每天拉取英文版文档内容的更新到 sync-docs 分支，并由 [docschina-bot](https://github.com/docschina-bot) 自动发起合并或 Pull Request，如有 PR 解决 Git 冲突并翻译内容即可。
 
+贡献指南敬请查看本仓库的 [Wiki](https://github.com/vitejs/docs-cn/wiki) 区。
 
-#### 安装教程
+**注意：**
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+- 原则上这里只进行英文版对应的翻译工作，如果觉得原文有改进之处，或任何不仅针对中文版，而受益所有语言版本的想法，建议直接在英文版仓库讨论。
+- 原则上这里不适合讨论 VitePress 的使用问题，建议相关问题在 VitePress 的 [issues 区](https://github.com/vuejs/vitepress/issues) 或各大主流技术社区讨论，以便得到更多人的帮助和更充分的讨论。
 
-#### 使用说明
+## 📥 如何本地开发
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```bash
+# 克隆本仓库
+$ git clone https://github.com/docschina/vitepress-docs-cn.git
 
-#### 参与贡献
+# 安装依赖
+$ yarn
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+# 启动开发服务器
+$ yarn dev
+```

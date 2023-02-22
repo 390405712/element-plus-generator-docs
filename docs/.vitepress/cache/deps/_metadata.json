@@ -1,0 +1,41 @@
+{
+  "hash": "0389b11e",
+  "browserHash": "8831928f",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "b5df9e39",
+      "needsInterop": false
+    },
+    "element-plus": {
+      "src": "../../../../node_modules/element-plus/es/index.mjs",
+      "file": "element-plus.js",
+      "fileHash": "10866e79",
+      "needsInterop": false
+    },
+    "element-plus-generator": {
+      "src": "../../../../node_modules/element-plus-generator/dist/index.js",
+      "file": "element-plus-generator.js",
+      "fileHash": "dba2f8ed",
+      "needsInterop": false
+    },
+    "@element-plus/icons-vue": {
+      "src": "../../../../node_modules/@element-plus/icons-vue/dist/index.js",
+      "file": "@element-plus_icons-vue.js",
+      "fileHash": "3b6ac754",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-FKERMNTG": {
+      "file": "chunk-FKERMNTG.js"
+    },
+    "chunk-AUE5ZQVH": {
+      "file": "chunk-AUE5ZQVH.js"
+    },
+    "chunk-YJNUPD57": {
+      "file": "chunk-YJNUPD57.js"
+    }
+  }
+}
