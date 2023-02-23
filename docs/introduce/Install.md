@@ -2,45 +2,45 @@
 
 - **步骤 1：** 安装依赖
 
-  ```bash
-    # 选择一个你喜欢的包管理器
+```bash
+# 选择一个你喜欢的包管理器
 
-    # NPM
-    $ npm install element-plus element-plus-generator --save
+# NPM
+$ npm install element-plus element-plus-generator --save
 
-    # Yarn
-    $ yarn add element-plus element-plus-generator
+# Yarn
+$ yarn add element-plus element-plus-generator
 
-    # pnpm
-    $ pnpm install element-plus element-plus-generator
-  ```
+# pnpm
+$ pnpm install element-plus element-plus-generator
+```
 
 - **步骤 2：** 引入依赖
 
-    全局注册
-    ```ts
-    import App from './App.vue'
+全局注册
+```ts
+import App from './App.vue'
 
-    import ElementPlus from 'element-plus'
-    import 'element-plus/dist/index.css'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 
-    import { FormGenerator, TableGenerator } from 'element-plus-generator'
+import { FormGenerator, TableGenerator } from 'element-plus-generator'
 
-    const app = createApp(App)
+const app = createApp(App)
 
-    app.component('FormGenerator', FormGenerator);
-    app.component('TableGenerator', TableGenerator);
+app.component('FormGenerator', FormGenerator);
+app.component('TableGenerator', TableGenerator);
 
-    app.use(ElementPlus).mount('#app')
-    ```
-    按需引入
-    ```vue
-    <template>
-      <FormGenerator :model="form" :formOption="formOption" />
-      <TableGenerator :data="tableData":tableOption="tableOption" />
-    </template>
-    <script lang="tsx" setup>
-    import { FormGenerator,TableGenerator } from 'element-plus-generator'
-    // ...
-    </script>
-    ```
+app.use(ElementPlus).mount('#app')
+```
+按需引入
+```vue
+<template>
+  <FormGenerator :model="form" :formOption="formOption" />
+  <TableGenerator :data="tableData":tableOption="tableOption" />
+</template>
+<script lang="tsx" setup>
+import { FormGenerator,TableGenerator } from 'element-plus-generator'
+// ...
+</script>
+```

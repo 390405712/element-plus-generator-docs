@@ -1,5 +1,5 @@
 <script setup>
-import DateTime from './../components/DateTime.vue'
+import DateTime from './../components/control/DateTime.vue'
 </script>
 
 # DateTime 日期、时间选择器

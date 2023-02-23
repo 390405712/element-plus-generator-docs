@@ -1,5 +1,5 @@
 <script setup>
-import Radio from './../components/Radio.vue'
+import Radio from './../components/control/Radio.vue'
 </script>
 
 # Radio 单选框

@@ -1,5 +1,5 @@
 <script setup>
-import RuleForm from './../components/RuleForm.vue'
+import RuleForm from './../components/form/RuleForm.vue'
 </script>
 
 # 校验表单
@@ -21,7 +21,7 @@ import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
 import { ref } from 'vue';
 
-let formRef = ref(null)
+let formRef = ref()
 let form = ref({})
 let formOption = ref<formOption[]>([
   {
@@ -65,8 +65,6 @@ let formOption = ref<formOption[]>([
     formItem: {
       prop: 'delivery',
       label: 'Instant delivery',
-    },
-    control: {
     },
   },
   {

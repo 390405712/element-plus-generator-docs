@@ -1,5 +1,5 @@
 <script setup>
-import Input from './../components/Input.vue'
+import Input from './../components/control/Input.vue'
 </script>
 
 # Input 输入框

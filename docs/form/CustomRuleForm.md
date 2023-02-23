@@ -1,5 +1,5 @@
 <script setup>
-import CustomRuleForm from './../components/CustomRuleForm.vue'
+import CustomRuleForm from './../components/form/CustomRuleForm.vue'
 </script>
 
 # 自定义校验表单
@@ -20,7 +20,7 @@ import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
 import type { formOption, rule } from 'element-plus-generator/dist/type'
 import { ref } from 'vue';
 
-let formRef = ref(null)
+let formRef = ref()
 let form = ref({})
 
 const checkIphoneNum = (

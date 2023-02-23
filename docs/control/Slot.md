@@ -1,5 +1,5 @@
 <script setup>
-import Slot from './../components/Slot.vue'
+import Slot from './../components/control/Slot.vue'
 </script>
 
 # Slot 自定义插槽

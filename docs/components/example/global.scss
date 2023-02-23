@@ -1,0 +1,46 @@
+@mixin flex-init($justify: center, $align: center, $direction: row, $wrap: nowrap) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  flex-wrap: $wrap;
+}
+@mixin grow-shrink($grow: 1, $shrink: -1) {
+  flex-grow: $grow;
+  flex-shrink: $shrink;
+}
+
+.Container {
+  width: 100%;
+  height: 100%;
+  @include flex-init(flex-start, flex-start, $direction: column);
+  gap: 12px;
+  // padding: 12px 20px;
+  box-sizing: border-box;
+
+  .Form,
+  .FormGenerator {
+    @include grow-shrink(0, 0);
+    width: 100%;
+
+  }
+
+  .Table {
+    width: 100%;
+    @include grow-shrink(1, 1);
+    @include flex-init(flex-start, $direction: column);
+    gap: 10px;
+
+    .tool {
+      width: 100%;
+      @include flex-init(flex-end);
+      @include grow-shrink(0, 0);
+    }
+  }
+
+  .Page {
+    @include grow-shrink(0, 0);
+    width: 100%;
+    @include flex-init(flex-end);
+  }
+}

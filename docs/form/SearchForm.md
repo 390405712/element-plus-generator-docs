@@ -1,5 +1,5 @@
 <script setup>
-import SearchForm from './../components/SearchForm.vue'
+import SearchForm from './../components/form/SearchForm.vue'
 </script>
 
 # 搜索表单
@@ -20,7 +20,7 @@ import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
 import { ref } from 'vue';
 
-let formRef = ref(null)
+let formRef = ref()
 let form = ref({})
 let formOption = ref<formOption[]>([
   {

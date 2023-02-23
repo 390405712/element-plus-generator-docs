@@ -1,5 +1,5 @@
 <script setup>
-import StateTable from './../components/StateTable.vue'
+import StateTable from './../components/table/StateTable.vue'
 </script>
 
 # 带状态表格

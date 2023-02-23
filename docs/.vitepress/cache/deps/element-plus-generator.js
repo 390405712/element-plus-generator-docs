@@ -39,31 +39,31 @@ import {
   watch
 } from "./chunk-YJNUPD57.js";
 
-// node_modules/element-plus-generator/dist/utils-0aa7ce72.js
-var f = (o, r, l, s) => {
+// node_modules/element-plus-generator/dist/utils-9d833f48.js
+var c = (o, r, n, s) => {
   if (!Array.isArray(o))
     return [];
   const e = [];
-  let n = [];
-  return s && (n = Object.keys(s)), o.forEach((t) => {
-    let i = {
+  let i = [];
+  return s && (i = Object.keys(s)), o.forEach((t) => {
+    let u = {
       label: typeof t == "string" ? t : t[r],
-      value: typeof t == "string" ? t : t[l]
+      value: typeof t == "string" ? t : t[n]
     };
-    s && n.forEach((u) => {
-      i[u] = t[u];
-    }), e.push(i);
+    s && i.forEach((l) => {
+      u[l] = t[l];
+    }), e.push(u);
   }), e;
 };
-var m = (o, r) => o.filter((l) => l.formItem.prop === r)[0] || {
+var f = (o, r) => o.filter((n) => n.formItem.prop === r)[0] || {
   type: "input",
   formItem: {
     prop: "",
     label: ""
   }
 };
-var c = (o, r, l) => {
-  var n;
+var m = (o, r, n) => {
+  var i;
   const s = {
     input: "输入",
     "input-number": "输入",
@@ -77,39 +77,38 @@ var c = (o, r, l) => {
     datetime: "选择",
     time: "选择",
     switch: "选择",
-    upload: "上传",
-    slot: "输入"
-  }, e = m(o.formOption, o.field);
+    upload: "上传"
+  }, e = f(o.formOption, o.field);
   if (Array.isArray(r) && r.length === 0)
-    return Promise.reject(`请${e.formItem.label.includes("文件") || e.formItem.label.includes("上传") ? "上传" : "选择"}${e.formItem.label}`);
+    return Promise.reject(`请${s[e.type] || "完善"}${e.formItem.label}`);
   if (!r)
-    return Promise.reject(`请${e.formItem.label.includes("文件") || e.formItem.label.includes("上传") ? "上传" : s[e.type] || "选择"}${e.formItem.label}`);
-  if (!((n = e == null ? void 0 : e.formItem) != null && n.rules))
+    return Promise.reject(`请${s[e.type] || "完善"}${e.formItem.label}`);
+  if (!((i = e == null ? void 0 : e.formItem) != null && i.rules))
     return Promise.resolve();
   if (typeof e.formItem.rules.validator == "function")
-    e.formItem.rules.validator(o, r).then(() => l()).catch((t) => {
-      var i;
-      return l(new Error(t !== "err" ? t : ((i = e == null ? void 0 : e.formItem.rules) == null ? void 0 : i.message) ?? ""));
+    e.formItem.rules.validator(o, r).then(() => n()).catch((t) => {
+      var u;
+      return n(new Error(t !== "err" ? t : ((u = e == null ? void 0 : e.formItem.rules) == null ? void 0 : u.message) ?? ""));
     });
   else
     return e.formItem.rules.validator.test(r) ? Promise.resolve() : Promise.reject(e.formItem.rules.message);
 };
 var a = (o, r = []) => {
-  let l = {};
+  let n = {};
   return o.forEach((s) => {
-    var n, t;
+    var i, t;
     const e = typeof s == "string" ? s : s.formItem.prop;
-    r.includes(e) || (l[e] = [{ required: true, validator: c, trigger: ((t = (n = s.formItem) == null ? void 0 : n.rules) == null ? void 0 : t.trigger) ?? "blur", formOption: o }]);
-  }), l;
+    r.includes(e) || (n[e] = [{ required: true, validator: m, trigger: ((t = (i = s.formItem) == null ? void 0 : i.rules) == null ? void 0 : t.trigger) ?? "blur", formOption: o }]);
+  }), n;
 };
-var d = {
+var g = {
   checkIphoneNum: (o, r) => r ? /(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/.test(r) ? Promise.resolve() : Promise.reject("手机格式有误") : Promise.reject("请输入手机号")
 };
-var b = Object.freeze(Object.defineProperty({
+var p = Object.freeze(Object.defineProperty({
   __proto__: null,
-  CommonValidator: d,
-  getLabel: m,
-  getOption: f,
+  CommonValidator: g,
+  getLabel: f,
+  getOption: c,
   getRules: a
 }, Symbol.toStringTag, { value: "Module" }));
 
@@ -117,7 +116,7 @@ var b = Object.freeze(Object.defineProperty({
 (function() {
   try {
     var elementStyle = document.createElement("style");
-    elementStyle.appendChild(document.createTextNode(".FormGenerator.FormGeneratorSearch{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;flex-direction:row;gap:15px 10px}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item{width:calc(25% - 8px);margin:0}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item.btnItem{margin:0}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item.btnItem .el-form-item__content{flex-wrap:nowrap}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline){padding-bottom:45px}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .btnItem{margin:0;height:64px;position:absolute;bottom:0;right:0;width:100%;box-shadow:1px 2px 10px #9ab7ff80;z-index:1;z-index:11;padding:0 16px;box-sizing:border-box}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .btnItem .el-form-item__content{display:flex;justify-content:flex-end;align-items:center;flex-wrap:nowrap}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .el-form-item__content>div{width:100%}.FormGenerator .searchItem{flex-grow:1;flex-shrink:0}.FormGenerator .searchItem .el-form-item__content{justify-content:flex-end}.FormGenerator .el-select,.FormGenerator .el-input,.FormGenerator .el-cascader,.FormGenerator .el-date-editor.el-input,.FormGenerator .el-date-editor.el-input__wrapper,.TableGenerator .el-scrollbar__view{width:100%}"));
+    elementStyle.appendChild(document.createTextNode(".FormGenerator.FormGeneratorSearch{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;flex-direction:row;gap:15px 10px}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item{width:calc(25% - 8px);margin:0}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item.btnItem{margin:0}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item.btnItem .el-form-item__label-wrap{display:none}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item.btnItem .el-form-item__content{flex-wrap:nowrap}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline){padding-bottom:45px}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .btnItem{margin:0;height:64px;position:absolute;bottom:0;right:0;width:100%;box-shadow:1px 2px 10px #9ab7ff80;z-index:1;z-index:11;padding:0 16px;box-sizing:border-box}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .btnItem .el-form-item__content{display:flex;justify-content:flex-end;align-items:center;flex-wrap:nowrap}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .el-form-item__content>div{width:100%}.FormGenerator .searchItem{flex-grow:1;flex-shrink:0}.FormGenerator .searchItem .el-form-item__content{justify-content:flex-end}.FormGenerator .el-select,.FormGenerator .el-input,.FormGenerator .el-cascader,.FormGenerator .el-date-editor.el-input,.FormGenerator .el-date-editor.el-input__wrapper,.TableGenerator .el-scrollbar__view{width:100%}"));
     document.head.appendChild(elementStyle);
   } catch (e) {
     console.error("vite-plugin-css-injected-by-js", e);
@@ -132,12 +131,12 @@ var ze = defineComponent({
     emit: s
   }) {
     const a2 = n;
-    let g, y = new Date().getTime(), E = ref(false), k = ref(0);
+    let g2, y = new Date().getTime(), E = ref(false), k = ref(0);
     return onMounted(() => {
       watch(() => a2.loading, (x) => {
-        x ? g = ElLoading.service({
+        x ? g2 = ElLoading.service({
           target: `.el-table-${y}`
-        }) : g == null || g.close();
+        }) : g2 == null || g2.close();
       }, {
         immediate: true
       }), watch(() => a2.data, (x) => {
@@ -145,8 +144,8 @@ var ze = defineComponent({
           return E.value = true;
         E.value = false, setTimeout(() => {
           let _ = 0;
-          document.querySelectorAll(".content-wrapper-width").forEach((m2) => {
-            m2.offsetWidth > _ && (_ = m2.offsetWidth);
+          document.querySelectorAll(".content-wrapper-width").forEach((C) => {
+            C.offsetWidth > _ && (_ = C.offsetWidth);
           }), k.value = _ > 0 ? _ + 32 : "auto", console.log(k.value), E.value = true;
         });
       }, {
@@ -156,7 +155,9 @@ var ze = defineComponent({
       function x(w) {
         return w.map((e) => ["selection", "index", "expand"].includes(e.type) ? createVNode(ElTableColumn, mergeProps({
           type: e.type
-        }, e), null) : createVNode(ElTableColumn, mergeProps({
+        }, e), {
+          ...e == null ? void 0 : e.slot
+        }) : createVNode(ElTableColumn, mergeProps({
           "show-overflow-tooltip": true,
           align: "left"
         }, e), {
@@ -200,7 +201,7 @@ var ze = defineComponent({
           append: () => u != null && u.append ? u == null ? void 0 : u.append() : ""
         });
       }
-      function m2() {
+      function C() {
         return createVNode(ElTable, mergeProps(n, {
           class: `TableGenerator el-table-${y}`
         }), {
@@ -220,7 +221,7 @@ var ze = defineComponent({
           })]
         });
       }
-      return createVNode(Fragment, null, [E.value ? _() : m2()]);
+      return createVNode(Fragment, null, [E.value ? _() : C()]);
     };
   }
 });
@@ -273,18 +274,18 @@ var ke = {
   viewBox: "0 0 1024 1024",
   xmlns: "http://www.w3.org/2000/svg"
 };
-var me = createBaseVNode("path", {
+var Ce = createBaseVNode("path", {
   fill: "currentColor",
   d: "M771.776 794.88A384 384 0 0 1 128 512h64a320 320 0 0 0 555.712 216.448H654.72a32 32 0 1 1 0-64h149.056a32 32 0 0 1 32 32v148.928a32 32 0 1 1-64 0v-50.56zM276.288 295.616h92.992a32 32 0 0 1 0 64H220.16a32 32 0 0 1-32-32V178.56a32 32 0 0 1 64 0v50.56A384 384 0 0 1 896.128 512h-64a320 320 0 0 0-555.776-216.384z"
 }, null, -1);
-var Ce = [
-  me
+var De = [
+  Ce
 ];
-function De(v, $, n, u, s, a2) {
-  return openBlock(), createElementBlock("svg", ke, Ce);
+function Ue(v, $, n, u, s, a2) {
+  return openBlock(), createElementBlock("svg", ke, De);
 }
-var Ue = G($e, [["render", De], ["__file", "refresh.vue"]]);
-var Ye = {
+var Ye = G($e, [["render", Ue], ["__file", "refresh.vue"]]);
+var me = {
   name: "Search"
 };
 var Fe = {
@@ -301,7 +302,7 @@ var Te = [
 function pe(v, $, n, u, s, a2) {
   return openBlock(), createElementBlock("svg", Fe, Te);
 }
-var Ge = G(Ye, [["render", pe], ["__file", "search.vue"]]);
+var Ge = G(me, [["render", pe], ["__file", "search.vue"]]);
 function Se(v) {
   return typeof v == "function" || Object.prototype.toString.call(v) === "[object Object]" && !isVNode(v);
 }
@@ -313,26 +314,26 @@ var Pe = defineComponent({
     slots: u,
     emit: s
   }) {
-    const a2 = n, g = ref(), y = ref(false), E = {
+    const a2 = n, g2 = ref(), y = ref(false), E = {
       labelWidth: a2.labelWidth || "auto",
       column: isNaN(a2.column) ? 4 : a2.column >= 4 ? a2.column : 4
     }, k = {
       submit: () => {
-        g.value.validate((_) => {
+        g2.value.validate((_) => {
           _ && s("submit");
         });
       },
       reset: () => {
-        g.value.resetFields(), s("submit", "init");
+        g2.value.resetFields(), s("submit", "init");
       }
     };
     function x(_) {
-      y.value = _, a2.formOption.forEach((m2, w) => {
-        w > E.column - 2 && (m2.show = _);
+      y.value = _, a2.formOption.forEach((C, w) => {
+        w > E.column - 2 && (C.show = _);
       });
     }
     return a2.formOption.length >= E.column - 2 && (a2 == null ? void 0 : a2.type) === "search" && x(false), $(() => ({
-      ...g.value,
+      ...g2.value,
       ...k
     })), () => {
       function _() {
@@ -340,20 +341,19 @@ var Pe = defineComponent({
           ...a2
         };
         return delete e.model, delete e.formOption, a2.formOption.forEach((c2) => {
-          var h, V, D;
-          (h = c2 == null ? void 0 : c2.formItem) != null && h.rules && !((D = (V = c2 == null ? void 0 : c2.formItem) == null ? void 0 : V.rules) != null && D.hasOwnProperty("trigger")) && (c2.formItem.rules.trigger = "blur");
+          var h, V, U;
+          (h = c2 == null ? void 0 : c2.formItem) != null && h.rules && !((U = (V = c2 == null ? void 0 : c2.formItem) == null ? void 0 : V.rules) != null && U.hasOwnProperty("trigger")) && (c2.formItem.rules.trigger = "blur");
         }), createVNode(ElForm, mergeProps({
           class: `FormGenerator ${(a2 == null ? void 0 : a2.type) === "search" ? "FormGeneratorSearch" : ""} ${(a2 == null ? void 0 : a2.type) === "dialog" ? "FormGeneratorDialog" : ""}`,
           inline: (a2 == null ? void 0 : a2.type) === "search",
-          "validate-on-rule-change": false,
-          "scroll-to-error": true
+          "validate-on-rule-change": false
         }, E, e, {
-          ref: g
+          ref: g2
         }), {
           default: () => [a2.formOption.map((c2) => {
             let h;
             if (!(c2.hasOwnProperty("show") && c2.show === false))
-              return createVNode(ElFormItem, c2.formItem, Se(h = m2(c2)) ? h : {
+              return createVNode(ElFormItem, c2.formItem, Se(h = C(c2)) ? h : {
                 default: () => [h]
               });
           }), e.disabled === true || e.noFooter || !e.onSubmit ? "" : createVNode(ElFormItem, {
@@ -373,12 +373,13 @@ var Pe = defineComponent({
               onClick: k.submit
             }, {
               default: () => [createTextVNode("确定")]
-            })])
+            })]),
+            label: () => ""
           })]
         });
       }
-      function m2(e) {
-        var c2, h, V, D, S, B, A, N;
+      function C(e) {
+        var c2, h, V, U, S, B, A, N;
         switch (e.type) {
           case "input":
             return createVNode(ElInput, mergeProps({
@@ -407,10 +408,10 @@ var Pe = defineComponent({
             }), {
               default: () => {
                 var r;
-                return [(r = e == null ? void 0 : e.control) == null ? void 0 : r.option.map((d2) => createVNode(ElOption, mergeProps(d2, {
-                  key: d2.value
+                return [(r = e == null ? void 0 : e.control) == null ? void 0 : r.option.map((d) => createVNode(ElOption, mergeProps(d, {
+                  key: d.value
                 }), {
-                  ...d2 == null ? void 0 : d2.slot
+                  ...d == null ? void 0 : d.slot
                 }))];
               }
             });
@@ -435,12 +436,12 @@ var Pe = defineComponent({
             }), {
               default: () => {
                 var r;
-                return [(r = e == null ? void 0 : e.control) == null ? void 0 : r.option.map((d2) => createVNode(ElRadio, mergeProps(d2, {
-                  label: d2.value,
-                  key: d2.label
+                return [(r = e == null ? void 0 : e.control) == null ? void 0 : r.option.map((d) => createVNode(ElRadio, mergeProps(d, {
+                  label: d.value,
+                  key: d.label
                 }), {
-                  default: () => [d2.label],
-                  ...d2 == null ? void 0 : d2.slot
+                  default: () => [d.label],
+                  ...d == null ? void 0 : d.slot
                 }))];
               }
             });
@@ -451,12 +452,12 @@ var Pe = defineComponent({
             }), {
               default: () => {
                 var r;
-                return [(r = e == null ? void 0 : e.control) == null ? void 0 : r.option.map((d2) => createVNode(ElRadioButton, mergeProps(d2, {
-                  label: d2.value,
-                  key: d2.label
+                return [(r = e == null ? void 0 : e.control) == null ? void 0 : r.option.map((d) => createVNode(ElRadioButton, mergeProps(d, {
+                  label: d.value,
+                  key: d.label
                 }), {
-                  default: () => [d2.label],
-                  ...d2 == null ? void 0 : d2.slot
+                  default: () => [d.label],
+                  ...d == null ? void 0 : d.slot
                 }))];
               }
             });
@@ -467,12 +468,12 @@ var Pe = defineComponent({
             }), {
               default: () => {
                 var r;
-                return [(r = e == null ? void 0 : e.control) == null ? void 0 : r.option.map((d2) => createVNode(ElCheckbox, mergeProps(d2, {
-                  label: d2.value,
-                  key: d2.label
+                return [(r = e == null ? void 0 : e.control) == null ? void 0 : r.option.map((d) => createVNode(ElCheckbox, mergeProps(d, {
+                  label: d.value,
+                  key: d.label
                 }), {
-                  default: () => [d2.label],
-                  ...d2 == null ? void 0 : d2.slot
+                  default: () => [d.label],
+                  ...d == null ? void 0 : d.slot
                 }))];
               }
             });
@@ -483,12 +484,12 @@ var Pe = defineComponent({
             }), {
               default: () => {
                 var r;
-                return [(r = e == null ? void 0 : e.control) == null ? void 0 : r.option.map((d2) => createVNode(ElCheckboxButton, mergeProps(d2, {
-                  label: d2.value,
-                  key: d2.label
+                return [(r = e == null ? void 0 : e.control) == null ? void 0 : r.option.map((d) => createVNode(ElCheckboxButton, mergeProps(d, {
+                  label: d.value,
+                  key: d.label
                 }), {
-                  default: () => [d2.label],
-                  ...d2 == null ? void 0 : d2.slot
+                  default: () => [d.label],
+                  ...d == null ? void 0 : d.slot
                 }))];
               }
             });
@@ -507,7 +508,7 @@ var Pe = defineComponent({
               modelValue: a2.model[e.formItem.prop],
               "onUpdate:modelValue": (r) => a2.model[e.formItem.prop] = r
             }), {
-              ...(D = e == null ? void 0 : e.control) == null ? void 0 : D.slot
+              ...(U = e == null ? void 0 : e.control) == null ? void 0 : U.slot
             });
           case "time":
             return createVNode(ElTimePicker, mergeProps({
@@ -555,7 +556,7 @@ var Pe = defineComponent({
           default: () => [createTextVNode("搜索")]
         }), createVNode(ElButton, {
           onClick: k.reset,
-          icon: Ue
+          icon: Ye
         }, {
           default: () => [createTextVNode("重置")]
         }), a2.type === "search" && a2.formOption.length > E.column - 1 ? createVNode(Fragment, null, [createVNode(ElButton, {
@@ -575,7 +576,7 @@ var Pe = defineComponent({
 });
 export {
   Pe as FormGenerator,
-  b as GeneratorUtils,
+  p as GeneratorUtils,
   ze as TableGenerator
 };
 /*! Bundled license information:

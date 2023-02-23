@@ -1,5 +1,5 @@
 <script setup>
-import ExpandTable from './../components/ExpandTable.vue'
+import ExpandTable from './../components/table/ExpandTable.vue'
 </script>
 
 # 展开行

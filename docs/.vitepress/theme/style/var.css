@@ -81,14 +81,14 @@ details > summary:first-of-type {
 } */
 
 @media (min-width: 1300px) {
-  .code{
+  .vp-doc .code{
     display: flex;
     gap: 10px;
     height: calc(100vh - 150px);
     flex-direction: row-reverse;
   }
 
-  .code >div{
+  .vp-doc .code >div{
     width: 50%;
     flex-shrink: 0;
     margin-bottom: 0!important;
@@ -97,10 +97,34 @@ details > summary:first-of-type {
   .VPDoc .container .content{
     padding: 0;
   }
-  :root{
-    /* --vp-layout-max-width: 1900px; */
+
+  .contrast > div{
+    width: 50%;
+    margin-bottom: 0;
+  }
+
+  .contrast{
+    padding: 0 64px;
+    display: flex;
+    gap: 10px;
   }
 }
 .vp-raw{
   overflow: auto;
+}
+
+.contrast{
+  /* margin-top: 10px; */
+  width: 100%;
+}
+.contrast > div{
+  background-color: var(--vp-code-block-bg);
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.VPHomeFeatures{
+  margin-bottom: 20px;
 }

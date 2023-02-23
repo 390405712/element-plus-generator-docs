@@ -1,5 +1,5 @@
 <script setup>
-import IndexTable from './../components/IndexTable.vue'
+import IndexTable from './../components/table/IndexTable.vue'
 </script>
 
 # 自定义索引

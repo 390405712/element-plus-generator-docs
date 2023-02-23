@@ -1,5 +1,5 @@
 <script setup>
-import SelectionTable from './../components/SelectionTable.vue'
+import SelectionTable from './../components/table/SelectionTable.vue'
 </script>
 
 # 多选

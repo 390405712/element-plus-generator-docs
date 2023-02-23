@@ -1,5 +1,5 @@
 <script setup>
-import FixedTable from './../components/FixedTable.vue'
+import FixedTable from './../components/table/FixedTable.vue'
 </script>
 
 # 固定列
@@ -15,7 +15,6 @@ import FixedTable from './../components/FixedTable.vue'
 <template>
   <TableGenerator style="width: 100%" :data="tableData" :tableOption="tableOption">
     <template #operation="scope">
-      <el-button>Default</el-button>
       <el-button type="primary">Primary</el-button>
     </template>
   </TableGenerator>
@@ -30,12 +29,15 @@ let tableOption = ref<tableOption[]>([
   {
     prop: 'date',
     label: 'Date',
+    width:'180'
   }, {
     prop: 'name',
     label: 'Name',
+    width:'180'
   }, {
     prop: 'address',
     label: 'Address',
+    width:'100',
     fixed: 'right'
   },
 ])

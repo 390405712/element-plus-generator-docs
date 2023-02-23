@@ -1,5 +1,5 @@
 <script setup>
-import DialogForm from './../components/DialogForm.vue'
+import DialogForm from './../components/form/DialogForm.vue'
 </script>
 
 # 弹窗表单
@@ -24,7 +24,7 @@ import type { formOption } from 'element-plus-generator/dist/type'
 import { ref } from 'vue';
 
 let visible = $ref(false)
-let formRef = ref(null)
+let formRef = ref()
 let form = ref({})
 let formOption = ref<formOption[]>([
   {

@@ -1,5 +1,5 @@
 <script setup>
-import NoStripeTable from './../components/NoStripeTable.vue'
+import NoStripeTable from './../components/table/NoStripeTable.vue'
 </script>
 
 # 不带斑马纹表格

@@ -1,5 +1,5 @@
 <script setup>
-import SortTable from './../components/SortTable.vue'
+import SortTable from './../components/table/SortTable.vue'
 </script>
 
 # 排序

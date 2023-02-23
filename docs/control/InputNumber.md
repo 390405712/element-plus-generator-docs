@@ -1,5 +1,5 @@
 <script setup>
-import InputNumber from './../components/InputNumber.vue'
+import InputNumber from './../components/control/InputNumber.vue'
 </script>
 
 # Input Number 数字输入框

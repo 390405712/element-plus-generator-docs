@@ -1,5 +1,5 @@
 <script setup>
-import TypicalTable from './../components/TypicalTable.vue'
+import TypicalTable from './../components/table/TypicalTable.vue'
 </script>
 
 # 基础表格

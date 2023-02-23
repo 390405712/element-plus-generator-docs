@@ -1,5 +1,5 @@
 <script setup>
-import TreeSelect from './../components/TreeSelect.vue'
+import TreeSelect from './../components/control/TreeSelect.vue'
 </script>
 
 # TreeSelect 树形选择

@@ -26,11 +26,7 @@ module.exports = {
 
     nav: [
       { text: '具体api请查看Element Plus官网', link: 'https://element-plus.gitee.io/' },
-      // {
-      //   text: 'element-plus官网',
-      //   link: 'https://element-plus.gitee.io/'
-      // },
-      { text: '我的博客', link: 'https://qq390405712.gitee.io/blog/', activeMatch: '^/$|^/table/' },
+      { text: '我的博客', link: 'https://qq390405712.gitee.io/blog/'}, //activeMatch: '^/$|^/table/'
     ],
     sidebar: [
       {
@@ -38,7 +34,7 @@ module.exports = {
         collapsible: true,
         collapsed: false,
         items: [
-          { text: 'Makedown', link: '/introduce/Makedown' },
+          // { text: 'Makedown', link: '/introduce/Makedown' },
           { text: '安装', link: '/introduce/Install' },
           { text: '生成器类型', link: '/introduce/Type' },
         ]
@@ -75,6 +71,7 @@ module.exports = {
           { text: '添加/删除表单项', link: '/form/AddOrDelForm' },
           { text: '弹窗表单', link: '/form/DialogForm' },
           { text: '搜索表单', link: '/form/SearchForm' },
+          { text: '自定义按钮', link: '/form/CustomButtonForm' },
         ]
       },
       {
@@ -100,7 +97,15 @@ module.exports = {
           { text: '合并行或列', link: '/table/MegerTable' },
           { text: '自定义索引', link: '/table/IndexTable' },
         ]
-      }
+      },
+      {
+        text: '实际运用',
+        collapsible: true,
+        collapsed: false,
+        items: [
+          { text: '模板化模块', link: '/example/module' },
+        ]
+      },
     ]
   },
 }

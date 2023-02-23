@@ -1,5 +1,5 @@
 <script setup>
-import InlineForm from './../components/InlineForm.vue'
+import InlineForm from './../components/form/InlineForm.vue'
 </script>
 
 # 行内表单
@@ -20,7 +20,7 @@ import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
 import { ref } from 'vue';
 
-let formRef = ref(null)
+let formRef = ref()
 let form = ref({})
 let formOption = ref<formOption[]>([
   {

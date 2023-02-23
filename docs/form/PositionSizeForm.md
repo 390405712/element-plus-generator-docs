@@ -1,5 +1,5 @@
 <script setup>
-import PositionSizeForm from './../components/PositionSizeForm.vue'
+import PositionSizeForm from './../components/form/PositionSizeForm.vue'
 </script>
 
 # 对齐方式与尺寸控制
@@ -22,7 +22,7 @@ import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
 import { ref } from 'vue';
 
-let formRef = ref(null)
+let formRef = ref()
 let form = ref({
   labelPosition: 'left',
   size: 'default',

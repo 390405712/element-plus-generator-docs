@@ -1,5 +1,5 @@
 <script setup>
-import TotalTable from './../components/TotalTable.vue'
+import TotalTable from './../components/table/TotalTable.vue'
 </script>
 
 # 表尾合计行

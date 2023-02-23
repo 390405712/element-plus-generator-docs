@@ -1,5 +1,5 @@
 <script setup>
-import MegerTable from './../components/MegerTable.vue'
+import MegerTable from './../components/table/MegerTable.vue'
 </script>
 
 # 合并行或列

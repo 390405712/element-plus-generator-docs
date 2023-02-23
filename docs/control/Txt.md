@@ -1,5 +1,5 @@
 <script setup>
-import Txt from './../components/Txt.vue'
+import Txt from './../components/control/Txt.vue'
 </script>
 
 # Txt 文本

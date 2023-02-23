@@ -1,5 +1,5 @@
 <script setup>
-import Upload from './../components/Upload.vue'
+import Upload from './../components/control/Upload.vue'
 </script>
 
 # Upload 上传

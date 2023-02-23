@@ -1,5 +1,5 @@
 <script setup>
-import Select from './../components/Select.vue'
+import Select from './../components/control/Select.vue'
 </script>
 
 # Select 选择器

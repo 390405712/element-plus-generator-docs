@@ -1,5 +1,5 @@
 <script setup>
-import SlotTable from './../components/SlotTable.vue'
+import SlotTable from './../components/table/SlotTable.vue'
 </script>
 
 # 自定义列模板

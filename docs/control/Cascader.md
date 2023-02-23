@@ -1,5 +1,5 @@
 <script setup>
-import Cascader from './../components/Cascader.vue'
+import Cascader from './../components/control/Cascader.vue'
 </script>
 
 # Cascader 级联选择器

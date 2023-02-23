@@ -1,5 +1,5 @@
 <script setup>
-import HeightTable from './../components/HeightTable.vue'
+import HeightTable from './../components/table/HeightTable.vue'
 </script>
 
 # 固定表头

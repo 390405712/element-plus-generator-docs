@@ -1,5 +1,5 @@
 <script setup>
-import FormatTable from './../components/FormatTable.vue'
+import FormatTable from './../components/table/FormatTable.vue'
 </script>
 
 # 格式化

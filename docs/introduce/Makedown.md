@@ -1,3 +1,4 @@
+有关更多选项，请查看 [Algolia DocSearch‘s documentation](https://docsearch.algolia.com/docs/behavior)。
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|

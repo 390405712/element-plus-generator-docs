@@ -1,5 +1,5 @@
 <script setup>
-import BorderTable from './../components/BorderTable.vue'
+import BorderTable from './../components/table/BorderTable.vue'
 </script>
 
 # 带边框表格

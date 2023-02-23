@@ -9,7 +9,6 @@ import * as GeneratorUtils from './utils';
 export { FormGenerator, TableGenerator, GeneratorUtils };
 ```
 
-
 ## 关于TableGenerator
 ```ts
 
@@ -41,6 +40,12 @@ export declare interface tableOption {
   children?: tableOption[]
 }
 
+/**
+ * @description: option对象
+ * @param label 名称
+ * @param value 值
+ * @param slot 插槽
+ */
 export declare type option = {
   [key: string]: any
   label?: string
@@ -56,17 +61,38 @@ export declare type option = {
 
 ## 关于FormGenerator
 ```ts
+/**
+ * @description: Form 方法
+ * @param resetFields 重置该表单项，将其值重置为初始值，并移除校验结果
+ * @param clearValidate 清理某个字段的表单验证信息。
+ * @param validate 对整个表单的内容进行验证。 接收一个回调函数，或返回 Promise。
+ * @param validateField 验证具体的某个字段。
+ * @param scrollToField 滚动到指定的字段
+ * @param submit 表单走验证后回调传入的方法
+ * @param reset 表单重置并回调submit
+ */
 export declare type RefFormGeneratorObj = {
   resetFields: () => void
   clearValidate: () => void
   validate: (val?: string[]) => Promise<boolean>
   validateField: (val?: string) => Promise<boolean>
+  scrollToField: () => void
   submit: () => void
   reset: () => void
 }
 
 export declare type RefFormGenerator = () => RefFormGeneratorObj
 
+/**
+ * @description: 校验对象
+ * @param required 是否必填
+ * @param message 自定义验证提示
+ * @param trigger 触发时机
+ * @param trigger 触发时机
+ * @param field 字段
+ * @param validator 校验方法
+ * @param formOption formOption数组
+ */
 export declare type rule = {
   required?: boolean
   message?: string
@@ -139,6 +165,12 @@ export declare interface tableAttrs {
   loading?: boolean
 }
 
+/**
+ * @description: option对象
+ * @param label 名称
+ * @param value 值
+ * @param slot 插槽
+ */
 export declare type option = {
   [key: string]: any
   label?: string
@@ -152,13 +184,12 @@ export declare type option = {
 }
 ```
 
-
-
 ## GeneratorUtils
 给`FormGenerator`用的方法
 ```ts
 import type { FormRules } from 'element-plus';
-import type { option, formOption, rule } from './type.d';//-->关于FormGenerator
+import type { option, formOption, rule } from './type.d';//-->指向FormGenerator中的option, formOption, rule
+
 /**
  * @description: 生成表单控件使用的option
  * @param arr 原始list
@@ -167,12 +198,14 @@ import type { option, formOption, rule } from './type.d';//-->关于FormGenerato
  * @param custom 自定义需要合并的对象
  */
 export declare const getOption: (arr: Record<string, string>[] | string[], label: string, value: string, custom?: {}) => option[];
+
 /**
  * @description: 获取表单配置中指定的对象
  * @param formOption 表单配置
  * @param key 指定的key
  */
 export declare const getLabel: (formOption: formOption[], key: string) => formOption;
+
 /**
  * @description: 生成校验配置
  * @param formOption 表单配置

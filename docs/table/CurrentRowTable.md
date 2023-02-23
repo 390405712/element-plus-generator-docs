@@ -1,5 +1,5 @@
 <script setup>
-import CurrentRowTable from './../components/CurrentRowTable.vue'
+import CurrentRowTable from './../components/table/CurrentRowTable.vue'
 </script>
 
 # 单选

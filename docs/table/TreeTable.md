@@ -1,5 +1,5 @@
 <script setup>
-import TreeTable from './../components/TreeTable.vue'
+import TreeTable from './../components/table/TreeTable.vue'
 </script>
 
 # 树形数据与懒加载

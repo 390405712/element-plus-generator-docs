@@ -1,5 +1,5 @@
 <script setup>
-import AddOrDelForm from './../components/AddOrDelForm.vue'
+import AddOrDelForm from './../components/form/AddOrDelForm.vue'
 </script>
 
 # 添加/删除表单项
@@ -23,7 +23,7 @@ import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
 import type { formOption, rule } from 'element-plus-generator/dist/type'
 import { ref } from 'vue';
 
-let formRef = ref(null)
+let formRef = ref()
 let form = ref({})
 
 const checkIphoneNum = (

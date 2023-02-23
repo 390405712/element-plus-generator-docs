@@ -1,5 +1,5 @@
 <script setup>
-import MultilevelHeadTable from './../components/MultilevelHeadTable.vue'
+import MultilevelHeadTable from './../components/table/MultilevelHeadTable.vue'
 </script>
 
 # 多级表头

@@ -1,5 +1,5 @@
 <script setup>
-import Switch from './../components/Switch.vue'
+import Switch from './../components/control/Switch.vue'
 </script>
 
 # Switch 开关
@@ -110,11 +110,11 @@ let formOption = ref<formOption[]>([
 ])
 
 function beforeChange() {
-  // loading.value = true
-  return new Promise((resolve) => {
+  loading.value = true
+  return new Promise((resolve,reject) => {
     setTimeout(() => {
       loading.value = false
-      return resolve(true)
+      return reject()
     }, 1000)
   })
 }

@@ -1,5 +1,5 @@
 <script setup>
-import Checkbox from './../components/Checkbox.vue'
+import Checkbox from './../components/control/Checkbox.vue'
 </script>
 
 # Checkbox 多选框
