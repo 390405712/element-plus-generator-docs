@@ -3,7 +3,7 @@ module.exports = {
   lang: 'zh-CN',
   title: 'ElementPlus生成器',
   description: 'Vite 与 Vue 驱动的静态站点生成器',
-
+  base:'./',
   themeConfig: {
     aside:false,
     // repo: 'docschina/vitepress-docs-cn',
