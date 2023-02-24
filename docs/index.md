@@ -15,8 +15,8 @@ hero:
       text: 开 始
       link: /introduce/Install
     - theme: alt
-      text: 访问npm
-      link: https://www.npmjs.com/package/element-plus-generator
+      text: 访问github
+      link: https://github.com/390405712/element-plus-generator
 features:
   - icon: 💡
     title: Vue3组件库
