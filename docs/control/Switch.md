@@ -57,7 +57,6 @@ let formOption = ref<formOption[]>([
     formItem: {
       prop: 'key4',
       label: '显示自定义图标',
-      labelWidth: '120'
     },
     control: {
       activeIcon: Check,
@@ -69,7 +68,6 @@ let formOption = ref<formOption[]>([
     formItem: {
       prop: 'key5',
       label: '扩展的value类型',
-      labelWidth: '120'
     },
     control: {
       activeValue: "100",

@@ -33,7 +33,6 @@ let formOption = ref<formOption[]>([
     formItem: {
       prop: 'slotKey',
       label: '自定义插槽',
-      labelWidth:'90'
     },
   },
 ])

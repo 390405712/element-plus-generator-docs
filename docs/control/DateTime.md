@@ -12,7 +12,7 @@ import DateTime from './../../../element-plus-generator-demo/src/views/Control/c
 
 ```vue
 <template>
-  <FormGenerator :model="form" :formOption="formOption" labelWidth="100"/>
+  <FormGenerator :model="form" :formOption="formOption"/>
 </template>
 
 <script lang="tsx" setup>

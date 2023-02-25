@@ -72,8 +72,7 @@ let formOption = ref<formOption[]>([
   },
 ])
 
-function submit(val: string) {
-  console.log(val);
+function submit() {
   console.log(formRef.value());
 }
 </script>

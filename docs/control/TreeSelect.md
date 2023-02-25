@@ -65,7 +65,6 @@ let formOption = ref<formOption[]>([
     formItem: {
       prop: 'key3',
       label: '选择任意级别',
-      labelWidth: '100'
     },
     control: {
       checkStrictly: true,
@@ -139,6 +138,34 @@ let formOption = ref<formOption[]>([
     type: 'tree-select',
     formItem: {
       prop: 'key6',
+      label: '自定义内容',
+    },
+    control: {
+      data: [{
+        value: '1',
+        label: 'Level one 1',
+        children: [
+          {
+            value: '1-1',
+            label: 'Level two 1-1',
+            children: [
+              {
+                value: '1-1-1',
+                label: 'Level three 1-1-1',
+              },
+            ],
+          },
+        ],
+      }],
+      slot: {
+        default: (scope: { data: { label: string } }) => (<>{scope.data.label}<span style="color: gray">(suffix)</span></>)
+      }
+    },
+  },
+  {
+    type: 'tree-select',
+    formItem: {
+      prop: 'key7',
       label: '懒加载',
     },
     control: {
@@ -153,7 +180,6 @@ let formOption = ref<formOption[]>([
     },
   },
 ])
-
 function filterMethod(value: string) {
   let data = GeneratorUtils.getLabel(formOption.value, 'key5').control.data
   data = [...data].filter((item) => item.label.includes(value))
@@ -162,7 +188,6 @@ function filterMethod(value: string) {
 
 let id = 0
 function load(node: Node, resolve: typeof Promise.resolve) {
-  console.log(node);
   if (node.isLeaf) return resolve([])
 
   setTimeout(() => {

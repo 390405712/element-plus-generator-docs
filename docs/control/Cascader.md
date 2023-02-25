@@ -330,7 +330,6 @@ let formOption = ref<formOption[]>([
     formItem: {
       prop: 'key4',
       label: '仅显示最后一级',
-      labelWidth: '120'
     },
     control: {
       showAllLevels: false,
@@ -355,7 +354,6 @@ let formOption = ref<formOption[]>([
     formItem: {
       prop: 'key6',
       label: '选择任意一级选项',
-      labelWidth: '130'
     },
     control: {
       props: {
