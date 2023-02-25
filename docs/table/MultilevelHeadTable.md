@@ -1,5 +1,5 @@
 <script setup>
-import MultilevelHeadTable from './../components/table/MultilevelHeadTable.vue'
+import MultilevelHeadTable from './../../../element-plus-generator-demo/src/views/Table/components/MultilevelHeadTable.vue'
 </script>
 
 # 多级表头
@@ -19,7 +19,7 @@ import MultilevelHeadTable from './../components/table/MultilevelHeadTable.vue'
 <script lang="tsx" setup>
 import { TableGenerator } from 'element-plus-generator'
 import type { tableOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let tableOption = ref<tableOption[]>([
   {

@@ -1,5 +1,5 @@
 <script setup>
-import InputNumber from './../components/control/InputNumber.vue'
+import InputNumber from './../../../element-plus-generator-demo/src/views/Control/components/InputNumber.vue'
 </script>
 
 # Input Number 数字输入框
@@ -18,7 +18,7 @@ import InputNumber from './../components/control/InputNumber.vue'
 <script lang="tsx" setup>
 import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let form = ref({})
 let formOption = ref<formOption[]>([

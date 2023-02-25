@@ -1,7 +1,6 @@
 <script setup>
-import BorderTable from './../components/table/BorderTable.vue'
+import BorderTable from './../../../element-plus-generator-demo/src/views/Table/components/BorderTable.vue'
 </script>
-
 # 带边框表格
 
 <div class="code">
@@ -19,7 +18,7 @@ import BorderTable from './../components/table/BorderTable.vue'
 <script lang="tsx" setup>
 import { TableGenerator } from 'element-plus-generator'
 import type { tableOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let tableOption = ref<tableOption[]>([
   {

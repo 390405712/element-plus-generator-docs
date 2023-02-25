@@ -1,5 +1,5 @@
 <script setup>
-import PositionSizeForm from './../components/form/PositionSizeForm.vue'
+import PositionSizeForm from './../../../element-plus-generator-demo/src/views/Form/components/PositionSizeForm.vue'
 </script>
 
 # 对齐方式与尺寸控制
@@ -20,7 +20,7 @@ import PositionSizeForm from './../components/form/PositionSizeForm.vue'
 <script lang="tsx" setup>
 import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let formRef = ref()
 let form = ref({

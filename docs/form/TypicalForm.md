@@ -1,8 +1,5 @@
-<!-- ---
-aside: false
---- -->
 <script setup>
-import TypicalForm from './../components/form/TypicalForm.vue'
+import TypicalForm from './../../../element-plus-generator-demo/src/views/Form/components/TypicalForm.vue'
 </script>
 
 # 典型表单
@@ -22,7 +19,7 @@ import TypicalForm from './../components/form/TypicalForm.vue'
 <script lang="tsx" setup>
 import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let formRef = ref()
 let form = ref({})

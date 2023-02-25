@@ -1,5 +1,5 @@
 <script setup>
-import HeightTable from './../components/table/HeightTable.vue'
+import HeightTable from './../../../element-plus-generator-demo/src/views/Table/components/HeightTable.vue'
 </script>
 
 # 固定表头
@@ -19,7 +19,7 @@ import HeightTable from './../components/table/HeightTable.vue'
 <script lang="tsx" setup>
 import { TableGenerator } from 'element-plus-generator'
 import type { tableOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let tableOption = ref<tableOption[]>([
   {

@@ -1,5 +1,5 @@
 <script setup>
-import CustomButtonForm from './../components/form/CustomButtonForm.vue'
+import CustomButtonForm from './../../../element-plus-generator-demo/src/views/Form/components/CustomButtonForm.vue'
 </script>
 
 # 自定义校验表单
@@ -21,7 +21,7 @@ import CustomButtonForm from './../components/form/CustomButtonForm.vue'
 <script lang="tsx" setup>
 import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let formRef = ref()
 let form = ref({})

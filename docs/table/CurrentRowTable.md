@@ -1,5 +1,5 @@
 <script setup>
-import CurrentRowTable from './../components/table/CurrentRowTable.vue'
+import CurrentRowTable from './../../../element-plus-generator-demo/src/views/Table/components/CurrentRowTable.vue'
 </script>
 
 # 单选
@@ -20,7 +20,7 @@ import CurrentRowTable from './../components/table/CurrentRowTable.vue'
 <script lang="tsx" setup>
 import { TableGenerator } from 'element-plus-generator'
 import type { tableOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let tableOption = ref<tableOption[]>([
   {

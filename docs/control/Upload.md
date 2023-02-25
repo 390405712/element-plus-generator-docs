@@ -1,5 +1,5 @@
 <script setup>
-import Upload from './../components/control/Upload.vue'
+import Upload from './../../../element-plus-generator-demo/src/views/Control/components/Upload.vue'
 </script>
 
 # Upload 上传
@@ -20,7 +20,7 @@ import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
 import type { UploadRequestOptions } from 'element-plus'
 import { Plus,UploadFilled } from '@element-plus/icons-vue'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let form = ref({})
 

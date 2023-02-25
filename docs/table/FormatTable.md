@@ -1,5 +1,5 @@
 <script setup>
-import FormatTable from './../components/table/FormatTable.vue'
+import FormatTable from './../../../element-plus-generator-demo/src/views/Table/components/FormatTable.vue'
 </script>
 
 # 格式化
@@ -19,7 +19,7 @@ import FormatTable from './../components/table/FormatTable.vue'
 <script lang="tsx" setup>
 import { TableGenerator } from 'element-plus-generator'
 import type { tableOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let tableOption = ref<tableOption[]>([
   {

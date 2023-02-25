@@ -1,5 +1,5 @@
 <script setup>
-import Select from './../components/control/Select.vue'
+import Select from './../../../element-plus-generator-demo/src/views/Control/components/Select.vue'
 </script>
 
 # Select 选择器
@@ -18,7 +18,7 @@ import Select from './../components/control/Select.vue'
 <script lang="tsx" setup>
 import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 import { Calendar, Search } from '@element-plus/icons-vue'
 
 let form = ref({})

@@ -1,5 +1,5 @@
 <script setup>
-import RuleForm from './../components/form/RuleForm.vue'
+import RuleForm from './../../../element-plus-generator-demo/src/views/Form/components/RuleForm.vue'
 </script>
 
 # 校验表单
@@ -19,7 +19,7 @@ import RuleForm from './../components/form/RuleForm.vue'
 <script lang="tsx" setup>
 import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let formRef = ref()
 let form = ref({})

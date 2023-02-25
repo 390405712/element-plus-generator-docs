@@ -1,5 +1,5 @@
 <script setup>
-import Input from './../components/control/Input.vue'
+import Input from './../../../element-plus-generator-demo/src/views/Control/components/Input.vue'
 </script>
 
 # Input 输入框
@@ -19,7 +19,7 @@ import Input from './../components/control/Input.vue'
   import { FormGenerator } from 'element-plus-generator'
   import type { formOption } from 'element-plus-generator/dist/type'
   import { Calendar, Search } from '@element-plus/icons-vue'
-  import { ref } from 'vue';
+  import { ref } from 'vue'
 
   let form = ref({})
   let formOption = ref<formOption[]>([

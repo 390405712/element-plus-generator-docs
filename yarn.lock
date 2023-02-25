@@ -608,11 +608,6 @@
   resolved "https://registry.npmjs.org/@types/lodash/-/lodash-4.14.191.tgz#09511e7f7cba275acd8b419ddac8da9a6a79e2fa"
   integrity sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==
 
-"@types/node@^18.14.0":
-  version "18.14.0"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.14.0.tgz#94c47b9217bbac49d4a67a967fdcdeed89ebb7d0"
-  integrity sha512-5EWrvLmglK+imbCJY0+INViFWUHg1AHel1sq4ZVSfdcNqGy9Edv3UB9IIzzg+xPaUcAgZYcfVs2fBcwDeZzU0A==
-
 "@types/web-bluetooth@^0.0.16":
   version "0.0.16"
   resolved "https://registry.npmjs.org/@types/web-bluetooth/-/web-bluetooth-0.0.16.tgz#1d12873a8e49567371f2a75fe3e7f7edca6662d8"
@@ -914,10 +909,10 @@ electron-to-chromium@^1.4.284:
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.304.tgz#d6eb7fea4073aacc471cf117df08b4b4978dc6ad"
   integrity sha512-6c8M+ojPgDIXN2NyfGn8oHASXYnayj+gSEnGeLMKb9zjsySeVB/j7KkNAAG9yDcv8gNlhvFg5REa1N/kQU6pgA==
 
-element-plus-generator@^1.0.29:
-  version "1.0.29"
-  resolved "https://registry.npmjs.org/element-plus-generator/-/element-plus-generator-1.0.29.tgz#59efad3c20b3edabc0f82e3f558b096af27c424d"
-  integrity sha512-HyqGBdSqypWH6XpJuy1Zd9CJuBuGPM4wBRr1YP42f3Sbap9kTcUgvsQme0om8ulzWPh18J0aK/iGYV4fpxXo2w==
+element-plus-generator@^1.0.32:
+  version "1.0.32"
+  resolved "https://registry.npmjs.org/element-plus-generator/-/element-plus-generator-1.0.32.tgz#725ef5305f8e838577783f6e977273f4ed801b94"
+  integrity sha512-ps/htgIokznn80P59Raa6kiNDAzuwHAlI4v5jp/oyAWiQhr6onw2RRsKtRX2qSPct8BAMdvUMYARmpnG1DVTJw==
   dependencies:
     "@element-plus/icons-vue" "^2.0.10"
     element-plus "^2.2.30"

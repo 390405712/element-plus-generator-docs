@@ -1,5 +1,5 @@
 <script setup>
-import Slot from './../components/control/Slot.vue'
+import Slot from './../../../element-plus-generator-demo/src/views/Control/components/Slot.vue'
 </script>
 
 # Slot 自定义插槽
@@ -22,7 +22,7 @@ import Slot from './../components/control/Slot.vue'
 <script lang="tsx" setup>
 import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let form = ref({
   slotKey: 5

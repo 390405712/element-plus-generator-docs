@@ -1,5 +1,5 @@
 <script setup>
-import DateTime from './../components/control/DateTime.vue'
+import DateTime from './../../../element-plus-generator-demo/src/views/Control/components/DateTime.vue'
 </script>
 
 # DateTime 日期、时间选择器
@@ -18,7 +18,7 @@ import DateTime from './../components/control/DateTime.vue'
 <script lang="tsx" setup>
 import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let form = ref({})
 let formOption = ref<formOption[]>([

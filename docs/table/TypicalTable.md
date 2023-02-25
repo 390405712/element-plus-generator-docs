@@ -1,5 +1,5 @@
 <script setup>
-import TypicalTable from './../components/table/TypicalTable.vue'
+import TypicalTable from './../../../element-plus-generator-demo/src/views/Table/components/TypicalTable.vue'
 </script>
 
 # 基础表格
@@ -19,7 +19,7 @@ import TypicalTable from './../components/table/TypicalTable.vue'
 <script lang="tsx" setup>
 import { TableGenerator } from 'element-plus-generator'
 import type { tableOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let tableOption = ref<tableOption[]>([
   {

@@ -1,5 +1,5 @@
 <script setup>
-import Txt from './../components/control/Txt.vue'
+import Txt from './../../../element-plus-generator-demo/src/views/Control/components/Txt.vue'
 </script>
 
 # Txt 文本
@@ -17,7 +17,7 @@ import Txt from './../components/control/Txt.vue'
 <script lang="tsx" setup>
 import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let form = ref({
   key:'文本值'

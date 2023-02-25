@@ -1,5 +1,5 @@
 <script setup>
-import ExpandTable from './../components/table/ExpandTable.vue'
+import ExpandTable from './../../../element-plus-generator-demo/src/views/Table/components/ExpandTable.vue'
 </script>
 
 # 展开行
@@ -19,7 +19,7 @@ import ExpandTable from './../components/table/ExpandTable.vue'
 <script lang="tsx" setup>
 import { TableGenerator } from 'element-plus-generator'
 import type { tableOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let tableOption = ref<tableOption[]>([
   {

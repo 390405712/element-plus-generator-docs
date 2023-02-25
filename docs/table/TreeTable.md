@@ -1,5 +1,5 @@
 <script setup>
-import TreeTable from './../components/table/TreeTable.vue'
+import TreeTable from './../../../element-plus-generator-demo/src/views/Table/components/TreeTable.vue'
 </script>
 
 # 树形数据与懒加载
@@ -20,7 +20,7 @@ import TreeTable from './../components/table/TreeTable.vue'
 <script lang="tsx" setup>
 import { TableGenerator } from 'element-plus-generator'
 import type { tableOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let tableOption = ref<tableOption[]>([
   {

@@ -1,5 +1,5 @@
 <script setup>
-import SortTable from './../components/table/SortTable.vue'
+import SortTable from './../../../element-plus-generator-demo/src/views/Table/components/SortTable.vue'
 </script>
 
 # 排序
@@ -19,7 +19,7 @@ import SortTable from './../components/table/SortTable.vue'
 <script lang="tsx" setup>
 import { TableGenerator } from 'element-plus-generator'
 import type { tableOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let tableOption = ref<tableOption[]>([
   {

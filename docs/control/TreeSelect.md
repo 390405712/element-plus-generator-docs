@@ -1,5 +1,5 @@
 <script setup>
-import TreeSelect from './../components/control/TreeSelect.vue'
+import TreeSelect from './../../../element-plus-generator-demo/src/views/Control/components/TreeSelect.vue'
 </script>
 
 # TreeSelect 树形选择
@@ -18,7 +18,8 @@ import TreeSelect from './../components/control/TreeSelect.vue'
 <script lang="tsx" setup>
 import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import type Node from 'element-plus/es/components/tree/src/model/node'
+import { ref } from 'vue'
 
 let form = ref({})
 const staticData = [{
@@ -160,7 +161,7 @@ function filterMethod(value: string) {
 
 
 let id = 0
-function load(node, resolve) {
+function load(node: Node, resolve: typeof Promise.resolve) {
   console.log(node);
   if (node.isLeaf) return resolve([])
 
@@ -179,7 +180,6 @@ function load(node, resolve) {
   }, 400)
 }
 
-// 自定义节点内容不支持 需用type:'slot'方式解决
 </script>
 ```
 

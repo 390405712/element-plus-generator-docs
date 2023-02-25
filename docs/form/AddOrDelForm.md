@@ -1,5 +1,5 @@
 <script setup>
-import AddOrDelForm from './../components/form/AddOrDelForm.vue'
+import AddOrDelForm from './../../../element-plus-generator-demo/src/views/Form/components/AddOrDelForm.vue'
 </script>
 
 # 添加/删除表单项
@@ -21,7 +21,7 @@ import AddOrDelForm from './../components/form/AddOrDelForm.vue'
 <script lang="tsx" setup>
 import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
 import type { formOption, rule } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let formRef = ref()
 let form = ref({})

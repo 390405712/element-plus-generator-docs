@@ -1,5 +1,5 @@
 <script setup>
-import Checkbox from './../components/control/Checkbox.vue'
+import Checkbox from './../../../element-plus-generator-demo/src/views/Control/components/Checkbox.vue'
 </script>
 
 # Checkbox 多选框
@@ -18,7 +18,7 @@ import Checkbox from './../components/control/Checkbox.vue'
 <script lang="tsx" setup>
 import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let form = ref({})
 

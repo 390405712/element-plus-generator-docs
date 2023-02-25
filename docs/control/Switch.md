@@ -1,5 +1,5 @@
 <script setup>
-import Switch from './../components/control/Switch.vue'
+import Switch from './../../../element-plus-generator-demo/src/views/Control/components/Switch.vue'
 </script>
 
 # Switch 开关
@@ -18,7 +18,7 @@ import Switch from './../components/control/Switch.vue'
 <script lang="tsx" setup>
 import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 import { Check, Close } from '@element-plus/icons-vue'
 
 let form = ref({})

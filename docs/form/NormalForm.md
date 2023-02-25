@@ -1,5 +1,5 @@
 <script setup>
-import NormalForm from './../components/form/NormalForm.vue'
+import NormalForm from './../../../element-plus-generator-demo/src/views/Form/components/NormalForm.vue'
 </script>
 
 # 自定义插槽
@@ -19,7 +19,7 @@ import NormalForm from './../components/form/NormalForm.vue'
 <script lang="tsx" setup>
 import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let formRef = ref()
 let form = ref({})

@@ -1,5 +1,5 @@
 <script setup>
-import Radio from './../components/control/Radio.vue'
+import Radio from './../../../element-plus-generator-demo/src/views/Control/components/Radio.vue'
 </script>
 
 # Radio 单选框
@@ -18,7 +18,7 @@ import Radio from './../components/control/Radio.vue'
 <script lang="tsx" setup>
 import { FormGenerator } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let form = ref({})
 

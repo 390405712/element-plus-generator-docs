@@ -15,8 +15,8 @@ hero:
       text: 开 始
       link: /introduce/Install
     - theme: alt
-      text: 访问github
-      link: https://github.com/390405712/element-plus-generator
+      text: 访问npm
+      link: https://www.npmjs.com/package/element-plus-generator
 features:
   - icon: 💡
     title: Vue3组件库
@@ -38,7 +38,7 @@ features:
   </template>
 
   <script lang="tsx" setup>
-  import { ref } from 'vue';
+  import { ref } from 'vue'
 
   let form = ref({})
   let formOption = ref([
@@ -103,7 +103,7 @@ features:
 <script lang="tsx" setup>
 import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
 import type { formOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let formRef = ref()
 let form = ref({

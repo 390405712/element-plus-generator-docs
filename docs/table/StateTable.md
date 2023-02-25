@@ -1,5 +1,5 @@
 <script setup>
-import StateTable from './../components/table/StateTable.vue'
+import StateTable from './../../../element-plus-generator-demo/src/views/Table/components/StateTable.vue'
 </script>
 
 # 带状态表格
@@ -19,7 +19,7 @@ import StateTable from './../components/table/StateTable.vue'
 <script lang="tsx" setup>
 import { TableGenerator } from 'element-plus-generator'
 import type { tableOption } from 'element-plus-generator/dist/type'
-import { ref } from 'vue';
+import { ref } from 'vue'
 
 let tableOption = ref<tableOption[]>([
   {
