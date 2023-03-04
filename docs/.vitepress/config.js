@@ -5,6 +5,9 @@ export default defineConfig((config) => {
     title: 'ElementPlus生成器',
     description: 'Vite 与 Vue 驱动的静态站点生成器',
     base: config.mode === 'development' ? '/' : '/element-plus-generator-docs/',
+    head: [
+      ['link', { rel: 'icon', href: `/logo.png` }],
+    ],
     themeConfig: {
       aside: false,
       // repo: 'docschina/vitepress-docs-cn',
