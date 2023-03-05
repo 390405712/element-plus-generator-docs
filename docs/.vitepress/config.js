@@ -42,6 +42,7 @@ export default defineConfig((config) => {
       ],
       nav: [
         { text: '具体api请查看Element Plus官网', link: 'https://element-plus.gitee.io/' },
+        { text: 'ElementUIGenerator', link: 'https://qq390405712.gitee.io/element-ui-generator-docs/' },
         { text: '我的博客', link: 'https://qq390405712.gitee.io/blog/' }, //activeMatch: '^/$|^/table/'
       ],
       sidebar: [
