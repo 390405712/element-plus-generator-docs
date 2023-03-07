@@ -121,6 +121,7 @@ export default defineConfig((config) => {
           collapsed: false,
           items: [
             { text: '模板化模块', link: '/example/module' },
+            { text: '正则列表', link: '/example/regexp' },
           ]
         },
       ]
