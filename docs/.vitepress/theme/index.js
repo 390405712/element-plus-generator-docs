@@ -9,6 +9,7 @@ import 'element-plus/theme-chalk/dark/css-vars.css'
 // import * as elementPlusGenerator from "element-plus-generator"
 // import { FormGenerator, TableGenerator } from "element-plus-generator"
 import './style/var.css'
+
 export default {
   ...DefaultTheme,
   enhanceApp: async ({ app, router, siteData }) => {
