@@ -1,6 +1,6 @@
 import "./chunk-DFKQJ226.js";
 
-// node_modules/element-plus-generator/dist/regexpToArr.js
+// ../element-plus-generator-demo/node_modules/element-plus-generator/dist/regexpToArr.js
 var e = [
   {
     key: "RegExpTrain",

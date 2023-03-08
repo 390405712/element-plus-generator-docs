@@ -1,6 +1,6 @@
 {
   "hash": "cf66f0f0",
-  "browserHash": "7fdab87a",
+  "browserHash": "2f80c66d",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
@@ -11,26 +11,29 @@
     "element-plus": {
       "src": "../../../../node_modules/element-plus/es/index.mjs",
       "file": "element-plus.js",
-      "fileHash": "ca6a832e",
+      "fileHash": "c211c8ef",
       "needsInterop": false
     },
     "element-plus-generator": {
-      "src": "../../../../node_modules/element-plus-generator/dist/index.js",
+      "src": "../../../../../element-plus-generator-demo/node_modules/element-plus-generator/dist/index.js",
       "file": "element-plus-generator.js",
-      "fileHash": "f2d4a402",
+      "fileHash": "f4f56e8f",
       "needsInterop": false
     },
     "element-plus-generator/dist/regexpToArr": {
-      "src": "../../../../node_modules/element-plus-generator/dist/regexpToArr.js",
+      "src": "../../../../../element-plus-generator-demo/node_modules/element-plus-generator/dist/regexpToArr.js",
       "file": "element-plus-generator_dist_regexpToArr.js",
       "fileHash": "6e41ac6b",
+      "needsInterop": false
+    },
+    "element-plus-generator/dist/regexp": {
+      "src": "../../../../../element-plus-generator-demo/node_modules/element-plus-generator/dist/regexp.js",
+      "file": "element-plus-generator_dist_regexp.js",
+      "fileHash": "b7047ba8",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-KRXT55HS": {
-      "file": "chunk-KRXT55HS.js"
-    },
     "chunk-4S7LXNVO": {
       "file": "chunk-4S7LXNVO.js"
     },

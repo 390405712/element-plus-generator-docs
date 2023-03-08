@@ -12,7 +12,6 @@ import type { UserConfig as VitestUserConfigInterface } from "vitest/config"
 
 export default defineConfig({
   plugins: [
-    // vue({ script: { refSugar: true } }),
     vueJsx()
   ],
   // test: vitestConfig.test,

@@ -128,3 +128,13 @@ details > summary:first-of-type {
 .VPHomeFeatures{
   margin-bottom: 20px;
 }
+
+iframe{
+  border-style: none;
+  min-height: calc(100vh - 380px);
+
+}
+
+iframe body{
+  margin: 0;
+}
