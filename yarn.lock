@@ -909,10 +909,10 @@ electron-to-chromium@^1.4.284:
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.304.tgz#d6eb7fea4073aacc471cf117df08b4b4978dc6ad"
   integrity sha512-6c8M+ojPgDIXN2NyfGn8oHASXYnayj+gSEnGeLMKb9zjsySeVB/j7KkNAAG9yDcv8gNlhvFg5REa1N/kQU6pgA==
 
-element-plus-generator@^1.0.39:
-  version "1.0.39"
-  resolved "https://registry.npmjs.org/element-plus-generator/-/element-plus-generator-1.0.39.tgz#4a9938bc4e266782181db7e176ce23c2ba1bc14a"
-  integrity sha512-ImVPUtW5Ju/hubctIkS9iP9urqnMq7dnVOcI2aF39nDKyiIOAcj6m++KLGG2pa7MgFTvs8zR6mZr+lP3M91FPw==
+element-plus-generator@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/element-plus-generator/-/element-plus-generator-1.1.0.tgz#37ae04b3c193e011c1541fd2d83342b8135fd1b7"
+  integrity sha512-l6ZklYB1OC7iIfAhBZBMMX9mxSQE7BgLSlUQzPpU+UDfN6hAHqCmVj/eviySpr8f2EBA9nNUyD1OGmxtGUyOAg==
   dependencies:
     "@element-plus/icons-vue" "^2.0.10"
     element-plus "^2.2.30"
