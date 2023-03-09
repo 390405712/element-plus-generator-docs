@@ -89,6 +89,7 @@ export default defineConfig((config) => {
             { text: '弹窗表单', link: '/form/DialogForm' },
             { text: '搜索表单', link: '/form/SearchForm' },
             { text: '自定义按钮', link: '/form/CustomButtonForm' },
+            { text: '自定义表单样式', link: '/form/CustomStyleFrom' },
           ]
         },
         {
