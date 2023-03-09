@@ -4,17 +4,18 @@
 
 引入方式：(例如引入火车车次的正则) `import { RegExpTrain } from 'element-plus-generator/dist/regexp'`
 
+
+<!-- <RegexpCom/>
+
+<script setup>
+import RegexpCom from './../../../element-plus-generator-demo/src/views/Regexp/index.vue'
+</script> -->
+
+
 <div v-loading="loading">
   <div class="code"  id="regexp" />
 </div>
 
-<!-- <iframe id="regexp" src="https://qq390405712.gitee.io/element-plus-generator-demo/" width="100%" height="auto"></iframe> -->
-
-
-<!-- <RegexpCom/>
-<script setup>
-import RegexpCom from './../../../element-plus-generator-demo/src/views/Regexp/index.vue'
-</script>  -->
 
 <script setup>
   import {onMounted,ref} from 'vue'

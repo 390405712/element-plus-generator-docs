@@ -218,7 +218,7 @@ defineExpose({ getTableData })
 ```vue
 <template>
   <el-dialog :title="type" v-model="visible" width="500px">
-    <FormGenerator type="dialog" ref="RefFormGenerator" :model="form" :formOption="formOption" :rules="rules"
+    <FormGenerator type="dialog" ref="RefFormGenerator" :model="form" :formOption="formOption"
       @submit="submit" />
   </el-dialog>
 </template>
@@ -264,7 +264,7 @@ let formOption = ref<formOption[]>([
 
 ])
 
-const rules = GeneratorUtils.getRules(formOption.value)
+GeneratorUtils.setRequired(formOption.value)
 
 async function openDialog(id?: string) {
   type.value = id ? '修改' : '新增'

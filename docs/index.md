@@ -94,7 +94,6 @@ features:
     ref="formRef"
     :model="form"
     :formOption="formOption"
-    :rules="rules"
     @submit="submit"
     label-width="120px"
     status-icon/>
@@ -193,7 +192,7 @@ let formOption = ref<formOption[]>([
     }
   },
 ])
-const rules = GeneratorUtils.getRules(formOption.value)
+GeneratorUtils.setRequired(formOption.value)
 
 function submit() {
   console.log(formRef.value());

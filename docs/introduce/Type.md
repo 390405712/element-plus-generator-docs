@@ -208,12 +208,10 @@ export declare const getLabel: (formOption: formOption[], key: string) => formOp
 
 /**
  * @description: 生成校验配置
- * @param formOption 表单配置
- * @param omit 不需要验证的key
+ * @param formOption 表单配置 formOption[]
+ * @param omit 不需要验证的key  string[]
+ * @return formOption
  */
-export declare const getRules: (formOption: formOption[], omit?: string[]) => FormRules;
-export declare const CommonValidator: {
-    checkIphoneNum: (rule: rule, value: string | boolean) => Promise<void>;
-};
+export declare const setRequired: (formOption: formOption[], omit?: string[]) => formOption[];
 
 ```
