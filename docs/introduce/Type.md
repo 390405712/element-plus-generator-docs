@@ -70,7 +70,10 @@ export declare type option = {
  * @param scrollToField 滚动到指定的字段
  * @param submit 表单走验证后回调传入的方法
  * @param reset 表单重置并回调submit
+ * @param $refs 表单中所有控件expose内容的入口
  */
+
+import type { Ref } from 'vue'
 export declare type RefFormGeneratorObj = {
   resetFields: () => void
   clearValidate: () => void
@@ -79,6 +82,7 @@ export declare type RefFormGeneratorObj = {
   scrollToField: () => void
   submit: () => void
   reset: () => void
+  $refs: Record<string, Ref<Record<string, any>>>
 }
 
 export declare type RefFormGenerator = () => RefFormGeneratorObj

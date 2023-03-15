@@ -23,6 +23,7 @@ import RegexpCom from './../../../element-plus-generator-demo/src/views/Regexp/i
   onMounted(()=>{
     let iframe = document.createElement("iframe");
     iframe.style.width = '100%'
+    iframe.style.height = '19700px'
     iframe.src = "https://qq390405712.gitee.io/element-plus-generator-demo/";
     if (iframe.attachEvent) {
         iframe.attachEvent("onload", function () {
