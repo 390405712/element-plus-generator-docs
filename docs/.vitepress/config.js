@@ -43,6 +43,7 @@ export default defineConfig((config) => {
       nav: [
         { text: '具体api请查看Element Plus官网', link: 'https://element-plus.gitee.io/' },
         { text: 'ElementUIGenerator', link: 'https://qq390405712.gitee.io/element-ui-generator-docs/' },
+        { text: 'Vant3Generator', link: 'https://qq390405712.gitee.io/vant3-generator-docs/' },
         { text: '我的博客', link: 'https://qq390405712.gitee.io/blog/' }, //activeMatch: '^/$|^/table/'
       ],
       sidebar: [
@@ -71,7 +72,6 @@ export default defineConfig((config) => {
             { text: 'DateTime 日期时间选择器', link: '/control/DateTime' },
             { text: 'Switch 开关', link: '/control/Switch' },
             { text: 'Upload 上传', link: '/control/Upload' },
-            { text: 'Txt 文本', link: '/control/Txt' },
             { text: 'Slot 自定义插槽', link: '/control/Slot' },
           ]
         },
@@ -90,6 +90,7 @@ export default defineConfig((config) => {
             { text: '搜索表单', link: '/form/SearchForm' },
             { text: '自定义按钮', link: '/form/CustomButtonForm' },
             { text: '自定义表单样式', link: '/form/CustomStyleFrom' },
+            { text: '异型表单样式', link: '/form/AtypiaStyleFrom' },
           ]
         },
         {
@@ -122,7 +123,6 @@ export default defineConfig((config) => {
           collapsed: false,
           items: [
             { text: '模板化模块', link: '/example/module' },
-            { text: '正则列表', link: '/example/regexp' },
           ]
         },
       ]
