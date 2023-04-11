@@ -4,7 +4,7 @@
 
 <script lang="ts" setup>
 import { FormGenerator } from 'element-plus-generator'
-import type { formOption } from 'element-plus-generator/dist/type'
+import type { formOption } from 'element-plus-generator/lib/type'
 import { ref, inject } from 'vue'
 
 let form = ref<Record<string, string>>({})

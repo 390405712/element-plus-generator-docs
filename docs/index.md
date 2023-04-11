@@ -101,7 +101,7 @@ features:
 
   <script lang="tsx" setup>
   import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
-  import type { FormOption,RefFormGenerator } from 'element-plus-generator/dist/type'
+  import type { FormOption,RefFormGenerator } from 'element-plus-generator/lib/type'
   import { ref } from 'vue'
 
   let RefFormGenerator = ref<RefFormGenerator>()

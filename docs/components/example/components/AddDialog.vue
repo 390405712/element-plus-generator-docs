@@ -6,7 +6,7 @@
 
 <script lang="tsx" setup>
 import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
-import type { formOption, RefFormGenerator } from 'element-plus-generator/dist/type'
+import type { formOption, RefFormGenerator } from 'element-plus-generator/lib/type'
 import { ref, onMounted, inject, nextTick } from 'vue'
 import { ElMessage } from 'element-plus'
 // import $api from '@/services'

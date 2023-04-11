@@ -13,7 +13,7 @@
 </template>
 <script lang="ts" setup>
 import { TableGenerator } from 'element-plus-generator'
-import type { tableOption } from 'element-plus-generator/dist/type'
+import type { tableOption } from 'element-plus-generator/lib/type'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { ref, onMounted, inject } from 'vue'
 // import $api from '@/services'
