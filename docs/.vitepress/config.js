@@ -44,6 +44,7 @@ export default defineConfig((config) => {
         { text: '具体api请查看Element Plus官网', link: 'https://element-plus.gitee.io/' },
         { text: 'ElementUIGenerator', link: 'https://qq390405712.gitee.io/element-ui-generator-docs/' },
         { text: 'Vant3Generator', link: 'https://qq390405712.gitee.io/vant3-generator-docs/' },
+        { text: 'Vant4Generator', link: 'https://qq390405712.gitee.io/vant4-generator-docs/' },
         { text: '我的博客', link: 'https://qq390405712.gitee.io/blog/' }, //activeMatch: '^/$|^/table/'
       ],
       sidebar: [
