@@ -160,7 +160,7 @@ features:
         label: 'Activity type',
       },
       control: {
-        option: [
+        checkboxGroup: [
           {label: 'Online activities',value: 'Online activities'},
           {label: 'Promotion activities',value: 'Promotion activities'},
           {label: 'Offline activities',value: 'Offline activities'},
@@ -175,7 +175,7 @@ features:
         label: 'Resources',
       },
       control: {
-        option: [
+        radioGroup: [
           {label: 'Sponsor',value: 'Sponsor'},
           {label: 'Venue',value: 'Venue'},
         ]

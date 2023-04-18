@@ -1,13 +1,13 @@
 {
   "name": "element-plus-generator-docs",
-  "version": "1.2.2",
+  "version": "1.2.4",
   "author": "NieR",
   "private": true,
   "devDependencies": {
     "@vitejs/plugin-vue-jsx": "^3.0.0",
     "common-rules": "^1.0.2",
     "element-plus": "^2.2.31",
-    "element-plus-generator": "^1.2.2",
+    "element-plus-generator": "^1.2.4",
     "postcss": "^8.4.21",
     "postcss-prefix-selector": "^1.16.0",
     "sass": "^1.58.3",

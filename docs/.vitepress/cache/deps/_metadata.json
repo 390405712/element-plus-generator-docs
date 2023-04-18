@@ -1,47 +1,29 @@
 {
-  "hash": "6982f41f",
-  "browserHash": "9a5568ac",
+  "hash": "2f7cdadf",
+  "browserHash": "b4363a8a",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "0426547e",
+      "fileHash": "48e8d76f",
       "needsInterop": false
     },
     "element-plus": {
       "src": "../../../../node_modules/element-plus/es/index.mjs",
       "file": "element-plus.js",
-      "fileHash": "3492a0fa",
-      "needsInterop": false
-    },
-    "element-plus/dist/locale/zh-cn.mjs": {
-      "src": "../../../../node_modules/element-plus/dist/locale/zh-cn.mjs",
-      "file": "element-plus_dist_locale_zh-cn__mjs.js",
-      "fileHash": "3ade669c",
+      "fileHash": "6d8509d4",
       "needsInterop": false
     },
     "element-plus-generator": {
       "src": "../../../../../element-plus-generator-demo/node_modules/element-plus-generator/dist/index.js",
       "file": "element-plus-generator.js",
-      "fileHash": "e240cc2a",
-      "needsInterop": false
-    },
-    "@element-plus/icons-vue": {
-      "src": "../../../../../element-plus-generator-demo/node_modules/@element-plus/icons-vue/dist/index.js",
-      "file": "@element-plus_icons-vue.js",
-      "fileHash": "cb8b50a5",
+      "fileHash": "ca85764e",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-YESO2PBH": {
-      "file": "chunk-YESO2PBH.js"
-    },
-    "chunk-4S7LXNVO": {
-      "file": "chunk-4S7LXNVO.js"
-    },
-    "chunk-DFKQJ226": {
-      "file": "chunk-DFKQJ226.js"
+    "chunk-YJNUPD57": {
+      "file": "chunk-YJNUPD57.js"
     }
   }
 }
