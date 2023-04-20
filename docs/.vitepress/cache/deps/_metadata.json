@@ -1,29 +1,38 @@
 {
-  "hash": "2f7cdadf",
-  "browserHash": "b4363a8a",
+  "hash": "291c3aa4",
+  "browserHash": "8059b10e",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "48e8d76f",
+      "fileHash": "ba4f7b2b",
       "needsInterop": false
     },
     "element-plus": {
       "src": "../../../../node_modules/element-plus/es/index.mjs",
       "file": "element-plus.js",
-      "fileHash": "6d8509d4",
+      "fileHash": "01dbf9aa",
       "needsInterop": false
     },
     "element-plus-generator": {
       "src": "../../../../../element-plus-generator-demo/node_modules/element-plus-generator/dist/index.js",
       "file": "element-plus-generator.js",
-      "fileHash": "ca85764e",
+      "fileHash": "2dfe0c8f",
+      "needsInterop": false
+    },
+    "common-rules": {
+      "src": "../../../../../element-plus-generator-demo/node_modules/common-rules/dist/index.js",
+      "file": "common-rules.js",
+      "fileHash": "550a74fe",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-YJNUPD57": {
-      "file": "chunk-YJNUPD57.js"
+    "chunk-4S7LXNVO": {
+      "file": "chunk-4S7LXNVO.js"
+    },
+    "chunk-DFKQJ226": {
+      "file": "chunk-DFKQJ226.js"
     }
   }
 }

@@ -914,10 +914,10 @@ electron-to-chromium@^1.4.284:
   resolved "https://registry.npmjs.org/electron-to-chromium/-/electron-to-chromium-1.4.356.tgz#b75a8a8c31d571f6024310cc980a08cd6c15a8c5"
   integrity sha512-nEftV1dRX3omlxAj42FwqRZT0i4xd2dIg39sog/CnCJeCcL1TRd2Uh0i9Oebgv8Ou0vzTPw++xc+Z20jzS2B6A==
 
-element-plus-generator@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.npmjs.org/element-plus-generator/-/element-plus-generator-1.2.4.tgz#21ed5daa4cf5dd3bd052ffb52c373abb2d9ff0ed"
-  integrity sha512-zm5F+HaMmPllc2/D7KgkIllgbo8Udmv3z8OnZ3qsrmktYHdBCNsEJeGYybRLCzKxHNbN8Cnrdq6Q/wR7rWNXoA==
+element-plus-generator@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.npmjs.org/element-plus-generator/-/element-plus-generator-1.2.5.tgz#146b4ef557c23e1ac7f7e48d4d741831fd8242c1"
+  integrity sha512-SZfo92ULDc26R+H/CXV4gYMG5/sObf/Ap+wcZIRp5WHG+gY5pLxhlXw1l/5BOIKcYdtfiaxXOkPGj8r4uIuVHw==
 
 element-plus@^2.2.31:
   version "2.3.3"

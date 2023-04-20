@@ -120,6 +120,16 @@ export default defineConfig((config) => {
           ]
         },
         {
+          text: '步骤条',
+          collapsible: true,
+          collapsed: false,
+          items: [
+            { text: '基础用法', link: '/steps/BaseSteps' },
+            { text: '监听步骤', link: '/steps/EventsSteps' },
+            { text: '自定义按钮', link: '/steps/CustomBtnSteps' },
+          ]
+        },
+        {
           text: '实际运用',
           collapsible: true,
           collapsed: false,

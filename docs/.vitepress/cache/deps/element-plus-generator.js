@@ -5,8 +5,6 @@ import {
   Text,
   Transition,
   TransitionGroup,
-  __commonJS,
-  __toESM,
   cloneVNode,
   computed2 as computed,
   createApp,
@@ -74,7 +72,11 @@ import {
   withDirectives,
   withKeys,
   withModifiers
-} from "./chunk-YJNUPD57.js";
+} from "./chunk-4S7LXNVO.js";
+import {
+  __commonJS,
+  __toESM
+} from "./chunk-DFKQJ226.js";
 
 // ../element-plus-generator-demo/node_modules/dayjs/dayjs.min.js
 var require_dayjs_min = __commonJS({
@@ -83,7 +85,7 @@ var require_dayjs_min = __commonJS({
       "object" == typeof exports2 && "undefined" != typeof module2 ? module2.exports = e() : "function" == typeof define && define.amd ? define(e) : (t = "undefined" != typeof globalThis ? globalThis : t || self).dayjs = e();
     }(exports2, function() {
       "use strict";
-      var t = 1e3, e = 6e4, n = 36e5, r = "millisecond", i = "second", s2 = "minute", u2 = "hour", a2 = "day", o2 = "week", f2 = "month", h3 = "quarter", c2 = "year", d2 = "date", l2 = "Invalid Date", $ = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/, y = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g, M3 = { name: "en", weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"), ordinal: function(t2) {
+      var t = 1e3, e = 6e4, n = 36e5, r = "millisecond", i = "second", s2 = "minute", u2 = "hour", a2 = "day", o2 = "week", f2 = "month", h3 = "quarter", c2 = "year", d2 = "date", l2 = "Invalid Date", $ = /^(\d{4})[-/]?(\d{1,2})?[-/]?(\d{0,2})[Tt\s]*(\d{1,2})?:?(\d{1,2})?:?(\d{1,2})?[.:]?(\d+)?$/, y = /\[([^\]]+)]|Y{1,4}|M{1,4}|D{1,2}|d{1,4}|H{1,2}|h{1,2}|a|A|m{1,2}|s{1,2}|Z{1,2}|SSS/g, M2 = { name: "en", weekdays: "Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday".split("_"), months: "January_February_March_April_May_June_July_August_September_October_November_December".split("_"), ordinal: function(t2) {
         var e2 = ["th", "st", "nd", "rd"], n2 = t2 % 100;
         return "[" + t2 + (e2[(n2 - 20) % 10] || e2[n2] || e2[0]) + "]";
       } }, m2 = function(t2, e2, n2) {
@@ -104,7 +106,7 @@ var require_dayjs_min = __commonJS({
       }, u: function(t2) {
         return void 0 === t2;
       } }, g = "en", D2 = {};
-      D2[g] = M3;
+      D2[g] = M2;
       var p2 = function(t2) {
         return t2 instanceof _2;
       }, S2 = function t2(e2, n2, r2) {
@@ -132,10 +134,10 @@ var require_dayjs_min = __commonJS({
         return w2(t2, { locale: e2.$L, utc: e2.$u, x: e2.$x, $offset: e2.$offset });
       };
       var _2 = function() {
-        function M4(t2) {
+        function M3(t2) {
           this.$L = S2(t2.locale, null, true), this.parse(t2);
         }
-        var m3 = M4.prototype;
+        var m3 = M3.prototype;
         return m3.parse = function(t2) {
           this.$d = function(t3) {
             var e2 = t3.date, n2 = t3.utc;
@@ -180,15 +182,15 @@ var require_dayjs_min = __commonJS({
             return r2 ? i2 : i2.endOf(a2);
           }, $2 = function(t3, e3) {
             return O2.w(n2.toDate()[t3].apply(n2.toDate("s"), (r2 ? [0, 0, 0, 0] : [23, 59, 59, 999]).slice(e3)), n2);
-          }, y2 = this.$W, M5 = this.$M, m4 = this.$D, v3 = "set" + (this.$u ? "UTC" : "");
+          }, y2 = this.$W, M4 = this.$M, m4 = this.$D, v3 = "set" + (this.$u ? "UTC" : "");
           switch (h4) {
             case c2:
               return r2 ? l3(1, 0) : l3(31, 11);
             case f2:
-              return r2 ? l3(1, M5) : l3(0, M5 + 1);
+              return r2 ? l3(1, M4) : l3(0, M4 + 1);
             case o2:
               var g2 = this.$locale().weekStart || 0, D3 = (y2 < g2 ? y2 + 7 : y2) - g2;
-              return l3(r2 ? m4 - D3 : m4 + (6 - D3), M5);
+              return l3(r2 ? m4 - D3 : m4 + (6 - D3), M4);
             case a2:
             case d2:
               return $2(v3 + "Hours", 0);
@@ -230,7 +232,7 @@ var require_dayjs_min = __commonJS({
             return y2(1);
           if ($2 === o2)
             return y2(7);
-          var M5 = (d3 = {}, d3[s2] = e, d3[u2] = n, d3[i] = t, d3)[$2] || 1, m4 = this.$d.getTime() + r2 * M5;
+          var M4 = (d3 = {}, d3[s2] = e, d3[u2] = n, d3[i] = t, d3)[$2] || 1, m4 = this.$d.getTime() + r2 * M4;
           return O2.w(m4, this);
         }, m3.subtract = function(t2, e2) {
           return this.add(-1 * t2, e2);
@@ -252,7 +254,7 @@ var require_dayjs_min = __commonJS({
         }, m3.utcOffset = function() {
           return 15 * -Math.round(this.$d.getTimezoneOffset() / 15);
         }, m3.diff = function(r2, d3, l3) {
-          var $2, y2 = O2.p(d3), M5 = w2(r2), m4 = (M5.utcOffset() - this.utcOffset()) * e, v3 = this - M5, g2 = O2.m(this, M5);
+          var $2, y2 = O2.p(d3), M4 = w2(r2), m4 = (M4.utcOffset() - this.utcOffset()) * e, v3 = this - M4, g2 = O2.m(this, M4);
           return g2 = ($2 = {}, $2[c2] = g2 / 12, $2[f2] = g2, $2[h3] = g2 / 3, $2[o2] = (v3 - m4) / 6048e5, $2[a2] = (v3 - m4) / 864e5, $2[u2] = v3 / n, $2[s2] = v3 / e, $2[i] = v3 / t, $2)[y2] || v3, l3 ? g2 : O2.a(g2);
         }, m3.daysInMonth = function() {
           return this.endOf(f2).$D;
@@ -273,10 +275,10 @@ var require_dayjs_min = __commonJS({
           return this.$d.toISOString();
         }, m3.toString = function() {
           return this.$d.toUTCString();
-        }, M4;
-      }(), T2 = _2.prototype;
-      return w2.prototype = T2, [["$ms", r], ["$s", i], ["$m", s2], ["$H", u2], ["$W", a2], ["$M", f2], ["$y", c2], ["$D", d2]].forEach(function(t2) {
-        T2[t2[1]] = function(e2) {
+        }, M3;
+      }(), T3 = _2.prototype;
+      return w2.prototype = T3, [["$ms", r], ["$s", i], ["$m", s2], ["$H", u2], ["$W", a2], ["$M", f2], ["$y", c2], ["$D", d2]].forEach(function(t2) {
+        T3[t2[1]] = function(e2) {
           return this.$g(e2, t2[0], t2[1]);
         };
       }), w2.extend = function(t2, e2) {
@@ -399,10 +401,10 @@ var require_customParseFormat = __commonJS({
               try {
                 if (["x", "X"].indexOf(t4) > -1)
                   return new Date(("X" === t4 ? 1e3 : 1) * e4);
-                var r4 = c2(t4)(e4), i3 = r4.year, o3 = r4.month, s4 = r4.day, a4 = r4.hours, f4 = r4.minutes, h5 = r4.seconds, u4 = r4.milliseconds, d4 = r4.zone, l3 = /* @__PURE__ */ new Date(), m3 = s4 || (i3 || o3 ? 1 : l3.getDate()), M4 = i3 || l3.getFullYear(), Y2 = 0;
+                var r4 = c2(t4)(e4), i3 = r4.year, o3 = r4.month, s4 = r4.day, a4 = r4.hours, f4 = r4.minutes, h5 = r4.seconds, u4 = r4.milliseconds, d4 = r4.zone, l3 = /* @__PURE__ */ new Date(), m3 = s4 || (i3 || o3 ? 1 : l3.getDate()), M3 = i3 || l3.getFullYear(), Y2 = 0;
                 i3 && !o3 || (Y2 = o3 > 0 ? o3 - 1 : l3.getMonth());
                 var p2 = a4 || 0, v2 = f4 || 0, D2 = h5 || 0, g = u4 || 0;
-                return d4 ? new Date(Date.UTC(M4, Y2, m3, p2, v2, D2, g + 60 * d4.offset * 1e3)) : n3 ? new Date(Date.UTC(M4, Y2, m3, p2, v2, D2, g)) : new Date(M4, Y2, m3, p2, v2, D2, g);
+                return d4 ? new Date(Date.UTC(M3, Y2, m3, p2, v2, D2, g + 60 * d4.offset * 1e3)) : n3 ? new Date(Date.UTC(M3, Y2, m3, p2, v2, D2, g)) : new Date(M3, Y2, m3, p2, v2, D2, g);
               } catch (e5) {
                 return /* @__PURE__ */ new Date("");
               }
@@ -410,9 +412,9 @@ var require_customParseFormat = __commonJS({
           } else if (a3 instanceof Array)
             for (var l2 = a3.length, m2 = 1; m2 <= l2; m2 += 1) {
               s3[1] = a3[m2 - 1];
-              var M3 = n2.apply(this, s3);
-              if (M3.isValid()) {
-                this.$d = M3.$d, this.$L = M3.$L, this.init();
+              var M2 = n2.apply(this, s3);
+              if (M2.isValid()) {
+                this.$d = M2.$d, this.$L = M2.$L, this.init();
                 break;
               }
               m2 === l2 && (this.$d = /* @__PURE__ */ new Date(""));
@@ -20130,10 +20132,10 @@ function Qt(t) {
     for (var o2 = n.mainAxis, i = o2 === void 0 ? true : o2, a2 = n.altAxis, s2 = a2 === void 0 ? true : a2, f2 = n.fallbackPlacements, c2 = n.padding, u2 = n.boundary, m2 = n.rootBoundary, v2 = n.altBoundary, l2 = n.flipVariations, h3 = l2 === void 0 ? true : l2, p2 = n.allowedAutoPlacements, g = e.options.placement, x2 = q(g), y = x2 === g, $ = f2 || (y || !h3 ? [be(g)] : Kt(g)), d2 = [g].concat($).reduce(function(z, V) {
       return z.concat(q(V) === me ? Jt(e, { placement: V, boundary: u2, rootBoundary: m2, padding: c2, flipVariations: h3, allowedAutoPlacements: p2 }) : V);
     }, []), b2 = e.rects.reference, w2 = e.rects.popper, O2 = /* @__PURE__ */ new Map(), j = true, A2 = d2[0], k = 0; k < d2.length; k++) {
-      var D2 = d2[k], S2 = q(D2), L = te(D2) === U, re = [E, R].indexOf(S2) >= 0, oe = re ? "width" : "height", M3 = ne(e, { placement: D2, boundary: u2, rootBoundary: m2, altBoundary: v2, padding: c2 }), T2 = re ? L ? W : P : L ? R : E;
-      b2[oe] > w2[oe] && (T2 = be(T2));
-      var pe2 = be(T2), _2 = [];
-      if (i && _2.push(M3[S2] <= 0), s2 && _2.push(M3[T2] <= 0, M3[pe2] <= 0), _2.every(function(z) {
+      var D2 = d2[k], S2 = q(D2), L = te(D2) === U, re = [E, R].indexOf(S2) >= 0, oe = re ? "width" : "height", M2 = ne(e, { placement: D2, boundary: u2, rootBoundary: m2, altBoundary: v2, padding: c2 }), T3 = re ? L ? W : P : L ? R : E;
+      b2[oe] > w2[oe] && (T3 = be(T3));
+      var pe2 = be(T3), _2 = [];
+      if (i && _2.push(M2[S2] <= 0), s2 && _2.push(M2[T3] <= 0, M2[pe2] <= 0), _2.every(function(z) {
         return z;
       })) {
         A2 = D2, j = false;
@@ -20197,11 +20199,11 @@ function on(t) {
   var e = t.state, n = t.options, r = t.name, o2 = n.mainAxis, i = o2 === void 0 ? true : o2, a2 = n.altAxis, s2 = a2 === void 0 ? false : a2, f2 = n.boundary, c2 = n.rootBoundary, u2 = n.altBoundary, m2 = n.padding, v2 = n.tether, l2 = v2 === void 0 ? true : v2, h3 = n.tetherOffset, p2 = h3 === void 0 ? 0 : h3, g = ne(e, { boundary: f2, rootBoundary: c2, padding: m2, altBoundary: u2 }), x2 = q(e.placement), y = te(e.placement), $ = !y, d2 = Le(x2), b2 = rn(d2), w2 = e.modifiersData.popperOffsets, O2 = e.rects.reference, j = e.rects.popper, A2 = typeof p2 == "function" ? p2(Object.assign({}, e.rects, { placement: e.placement })) : p2, k = typeof A2 == "number" ? { mainAxis: A2, altAxis: A2 } : Object.assign({ mainAxis: 0, altAxis: 0 }, A2), D2 = e.modifiersData.offset ? e.modifiersData.offset[e.placement] : null, S2 = { x: 0, y: 0 };
   if (w2) {
     if (i) {
-      var L, re = d2 === "y" ? E : P, oe = d2 === "y" ? R : W, M3 = d2 === "y" ? "height" : "width", T2 = w2[d2], pe2 = T2 + g[re], _2 = T2 - g[oe], ue = l2 ? -j[M3] / 2 : 0, xe2 = y === U ? O2[M3] : j[M3], ie = y === U ? -j[M3] : -O2[M3], le = e.elements.arrow, z = l2 && le ? ke(le) : { width: 0, height: 0 }, V = e.modifiersData["arrow#persistent"] ? e.modifiersData["arrow#persistent"].padding : st(), de = V[re], ae = V[oe], Y2 = fe(0, O2[M3], z[M3]), jt = $ ? O2[M3] / 2 - ue - Y2 - de - k.mainAxis : xe2 - Y2 - de - k.mainAxis, Dt = $ ? -O2[M3] / 2 + ue + Y2 + ae + k.mainAxis : ie + Y2 + ae + k.mainAxis, Oe = e.elements.arrow && se(e.elements.arrow), Et = Oe ? d2 === "y" ? Oe.clientTop || 0 : Oe.clientLeft || 0 : 0, Ce2 = (L = D2 == null ? void 0 : D2[d2]) != null ? L : 0, Pt = T2 + jt - Ce2 - Et, At = T2 + Dt - Ce2, qe2 = fe(l2 ? ve(pe2, Pt) : pe2, T2, l2 ? X(_2, At) : _2);
-      w2[d2] = qe2, S2[d2] = qe2 - T2;
+      var L, re = d2 === "y" ? E : P, oe = d2 === "y" ? R : W, M2 = d2 === "y" ? "height" : "width", T3 = w2[d2], pe2 = T3 + g[re], _2 = T3 - g[oe], ue = l2 ? -j[M2] / 2 : 0, xe2 = y === U ? O2[M2] : j[M2], ie = y === U ? -j[M2] : -O2[M2], le = e.elements.arrow, z = l2 && le ? ke(le) : { width: 0, height: 0 }, V = e.modifiersData["arrow#persistent"] ? e.modifiersData["arrow#persistent"].padding : st(), de = V[re], ae = V[oe], Y2 = fe(0, O2[M2], z[M2]), jt = $ ? O2[M2] / 2 - ue - Y2 - de - k.mainAxis : xe2 - Y2 - de - k.mainAxis, Dt = $ ? -O2[M2] / 2 + ue + Y2 + ae + k.mainAxis : ie + Y2 + ae + k.mainAxis, Oe = e.elements.arrow && se(e.elements.arrow), Et = Oe ? d2 === "y" ? Oe.clientTop || 0 : Oe.clientLeft || 0 : 0, Ce2 = (L = D2 == null ? void 0 : D2[d2]) != null ? L : 0, Pt = T3 + jt - Ce2 - Et, At = T3 + Dt - Ce2, qe2 = fe(l2 ? ve(pe2, Pt) : pe2, T3, l2 ? X(_2, At) : _2);
+      w2[d2] = qe2, S2[d2] = qe2 - T3;
     }
     if (s2) {
-      var Ve2, kt = d2 === "x" ? E : P, Lt = d2 === "x" ? R : W, F2 = w2[b2], he = b2 === "y" ? "height" : "width", Ne = F2 + g[kt], Ie2 = F2 - g[Lt], $e2 = [E, P].indexOf(x2) !== -1, _e = (Ve2 = D2 == null ? void 0 : D2[b2]) != null ? Ve2 : 0, ze2 = $e2 ? Ne : F2 - O2[he] - j[he] - _e + k.altAxis, Fe2 = $e2 ? F2 + O2[he] + j[he] - _e - k.altAxis : Ie2, Ue2 = l2 && $e2 ? St(ze2, F2, Fe2) : fe(l2 ? ze2 : Ne, F2, l2 ? Fe2 : Ie2);
+      var Ve2, kt = d2 === "x" ? E : P, Lt = d2 === "x" ? R : W, F2 = w2[b2], he = b2 === "y" ? "height" : "width", Ne2 = F2 + g[kt], Ie2 = F2 - g[Lt], $e2 = [E, P].indexOf(x2) !== -1, _e = (Ve2 = D2 == null ? void 0 : D2[b2]) != null ? Ve2 : 0, ze = $e2 ? Ne2 : F2 - O2[he] - j[he] - _e + k.altAxis, Fe2 = $e2 ? F2 + O2[he] + j[he] - _e - k.altAxis : Ie2, Ue2 = l2 && $e2 ? St(ze, F2, Fe2) : fe(l2 ? ze : Ne2, F2, l2 ? Fe2 : Ie2);
       w2[b2] = Ue2, S2[b2] = Ue2 - F2;
     }
     e.modifiersData[r] = S2;
@@ -66746,44 +66748,44 @@ var version3 = installer.version;
 (function() {
   try {
     var elementStyle = document.createElement("style");
-    elementStyle.appendChild(document.createTextNode(".FormGenerator.FormGeneratorSearch{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;flex-direction:row;gap:15px 10px}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item{width:calc(25% - 8px);margin:0}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item.btnItem{margin:0}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item.btnItem .el-form-item__label-wrap{display:none}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item.btnItem .el-form-item__content{flex-wrap:nowrap}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline){padding-bottom:45px}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .btnItem{margin:0;height:64px;position:absolute;bottom:0;right:0;width:100%;box-shadow:1px 2px 10px #9ab7ff80;z-index:1;z-index:11;padding:0 16px;box-sizing:border-box}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .btnItem .el-form-item__content{display:flex;justify-content:flex-end;align-items:center;flex-wrap:nowrap}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .el-form-item__content>div{width:100%}.FormGenerator .searchItem{flex-grow:1;flex-shrink:0}.FormGenerator .searchItem .el-form-item__content{justify-content:flex-end}.FormGenerator .expandBtn i{transition:all .3s}.FormGenerator .expandBtn.down i{transform:rotate(180deg)}.FormGenerator .el-select,.FormGenerator .el-input,.FormGenerator .el-cascader,.FormGenerator .el-date-editor.el-input,.FormGenerator .el-date-editor.el-input__wrapper,.TableGenerator .el-scrollbar__view{width:100%}"));
+    elementStyle.appendChild(document.createTextNode(".FormGenerator.FormGeneratorSearch{display:flex;justify-content:flex-start;align-items:flex-start;flex-wrap:wrap;flex-direction:row;gap:15px 10px}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item{width:calc(25% - 8px);margin:0}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item.btnItem{margin:0}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item.btnItem .el-form-item__label-wrap{display:none}.FormGenerator.FormGeneratorSearch.el-form--inline .el-form-item.btnItem .el-form-item__content{flex-wrap:nowrap}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline){padding-bottom:45px}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .btnItem{margin:0;height:64px;position:absolute;bottom:0;right:0;width:100%;box-shadow:1px 2px 10px #9ab7ff80;z-index:1;z-index:11;padding:0 16px;box-sizing:border-box}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .btnItem .el-form-item__content{display:flex;justify-content:flex-end;align-items:center;flex-wrap:nowrap}.FormGenerator.FormGeneratorDialog.el-form--default:not(.el-form--inline) .el-form-item__content>div{width:100%}.FormGenerator .searchItem{flex-grow:1;flex-shrink:0}.FormGenerator .searchItem .el-form-item__content{justify-content:flex-end}.FormGenerator .expandBtn i{transition:all .3s}.FormGenerator .expandBtn.down i{transform:rotate(180deg)}.FormGenerator .el-select,.FormGenerator .el-input,.FormGenerator .el-cascader,.FormGenerator .el-date-editor.el-input,.FormGenerator .el-date-editor.el-input__wrapper,.TableGenerator .el-scrollbar__view{width:100%}.StepsGenerator{width:100%;height:100%;display:flex;flex-direction:column;justify-content:flex-start;gap:10px}.StepsGenerator .btn-group{width:100%;display:flex;justify-content:center;gap:10px}"));
     document.head.appendChild(elementStyle);
   } catch (e) {
     console.error("vite-plugin-css-injected-by-js", e);
   }
 })();
-var Re2 = defineComponent({
+var qe = defineComponent({
   name: "TableGenerator",
-  setup(h3, {
-    expose: n,
-    attrs: _2,
+  setup(n, {
+    expose: x2,
+    attrs: b2,
     slots: l2,
-    emit: v2
+    emit: y
   }) {
-    const a2 = ref(), s2 = _2;
-    let c2, b2 = (/* @__PURE__ */ new Date()).getTime(), x2 = ref(false), G2 = ref(0);
-    return watch(() => s2.loading, (V) => {
-      V ? nextTick(() => {
-        c2 = ElLoading.service({
-          target: `.el-table-${b2}`
+    const a2 = ref(), d2 = b2;
+    let t, h3 = (/* @__PURE__ */ new Date()).getTime(), v2 = ref(false), k = ref(0);
+    return watch(() => d2.loading, (g) => {
+      g ? nextTick(() => {
+        t = ElLoading.service({
+          target: `.el-table-${h3}`
         });
-      }) : c2 == null || c2.close();
+      }) : t == null || t.close();
     }, {
       immediate: true
-    }), watch(() => s2.data, (V) => {
-      if (!(l2 != null && l2.operation) || V.length === 0)
-        return x2.value = true;
-      x2.value = false, nextTick(() => {
-        let g = 0;
+    }), watch(() => d2.data, (g) => {
+      if (!(l2 != null && l2.operation) || g.length === 0)
+        return v2.value = true;
+      v2.value = false, nextTick(() => {
+        let _2 = 0;
         document.querySelectorAll(".content-wrapper-width").forEach((I3) => {
-          I3.offsetWidth > g && (g = I3.offsetWidth);
-        }), G2.value = g > 0 ? g + 32 : "auto", x2.value = true;
+          I3.offsetWidth > _2 && (_2 = I3.offsetWidth);
+        }), k.value = _2 > 0 ? _2 + 32 : "auto", v2.value = true;
       });
     }, {
       immediate: true
-    }), n(() => a2.value), () => {
-      function V(E3) {
-        return E3.map((e) => ["selection", "index", "expand"].includes(e.type) ? createVNode(ElTableColumn2, mergeProps({
+    }), x2(() => a2.value), () => {
+      function g(p2) {
+        return p2.map((e) => ["selection", "index", "expand"].includes(e.type) ? createVNode(ElTableColumn2, mergeProps({
           type: e.type
         }, e), {
           ...e == null ? void 0 : e.slots
@@ -66791,38 +66793,38 @@ var Re2 = defineComponent({
           "show-overflow-tooltip": true,
           align: "left"
         }, e), {
-          default: (y) => {
-            var k;
-            return e.children && Array.isArray(e.children) && e.children.length > 0 ? V(e.children) : l2[e.prop] ? createVNode(Fragment, null, [(k = l2[e.prop]) == null ? void 0 : k.call(l2, {
-              $index: y.$index,
-              row: y.row
+          default: (w2) => {
+            var $;
+            return e.children && Array.isArray(e.children) && e.children.length > 0 ? g(e.children) : l2[e.prop] ? createVNode(Fragment, null, [($ = l2[e.prop]) == null ? void 0 : $.call(l2, {
+              $index: w2.$index,
+              row: w2.row
             })]) : e.formatter ? createVNode(Fragment, null, [e.formatter({
-              $index: y.$index,
-              row: y.row
-            }) ?? "-"]) : createVNode(Fragment, null, [y.row[e.prop] ?? "-"]);
+              $index: w2.$index,
+              row: w2.row
+            }) ?? "-"]) : createVNode(Fragment, null, [w2.row[e.prop] ?? "-"]);
           },
           ...e == null ? void 0 : e.slots
         }));
       }
-      function g() {
+      function _2() {
         return createVNode(ElTable, mergeProps({
           ref: a2,
           stripe: true
-        }, s2, {
-          class: `TableGenerator el-table-${b2}`
+        }, d2, {
+          class: `TableGenerator el-table-${h3}`
         }), {
-          default: () => [V(s2.tableOption), l2 != null && l2.operation ? createVNode(ElTableColumn2, {
+          default: () => [g(d2.tableOption), l2 != null && l2.operation ? createVNode(ElTableColumn2, {
             fixed: "right",
             label: "操作",
-            width: G2.value
+            width: k.value
           }, {
-            default: (E3) => {
+            default: (p2) => {
               var e;
               return createVNode("div", {
                 class: "content-wrapper"
               }, [(e = l2.operation) == null ? void 0 : e.call(l2, {
-                $index: E3.$index,
-                row: E3.row
+                $index: p2.$index,
+                row: p2.row
               })]);
             }
           }) : ""],
@@ -66833,43 +66835,43 @@ var Re2 = defineComponent({
         });
       }
       function I3() {
-        return createVNode(ElTable, mergeProps(_2, {
-          class: `TableGenerator el-table-${b2}`
+        return createVNode(ElTable, mergeProps(b2, {
+          class: `TableGenerator el-table-${h3}`
         }), {
           default: () => [createVNode(ElTableColumn2, {
             fixed: "right"
           }, {
-            default: (E3) => {
+            default: (p2) => {
               var e;
               return createVNode("div", {
                 style: "display:inline-block;opacity:0",
                 class: "content-wrapper content-wrapper-width"
               }, [(e = l2.operation) == null ? void 0 : e.call(l2, {
-                $index: E3.$index,
-                row: E3.row
+                $index: p2.$index,
+                row: p2.row
               })]);
             }
           })]
         });
       }
-      return createVNode(Fragment, null, [x2.value ? g() : I3()]);
+      return createVNode(Fragment, null, [v2.value ? _2() : I3()]);
     };
   }
 });
-var M2 = (h3, n) => {
-  let _2 = h3.__vccOpts || h3;
-  for (let [l2, v2] of n)
-    _2[l2] = v2;
-  return _2;
+var T2 = (n, x2) => {
+  let b2 = n.__vccOpts || n;
+  for (let [l2, y] of x2)
+    b2[l2] = y;
+  return b2;
 };
-var ge2 = {
+var xe = {
   name: "ArrowUp"
 };
-var ne2 = {
+var Ee2 = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 1024 1024"
 };
-var xe = createBaseVNode(
+var ke2 = createBaseVNode(
   "path",
   {
     fill: "currentColor",
@@ -66879,17 +66881,17 @@ var xe = createBaseVNode(
   -1
   /* HOISTED */
 );
-var Ee2 = [
-  xe
+var pe = [
+  ke2
 ];
-function ke2(h3, n, _2, l2, v2, a2) {
-  return openBlock(), createElementBlock("svg", ne2, Ee2);
+function $e(n, x2, b2, l2, y, a2) {
+  return openBlock(), createElementBlock("svg", Ee2, pe);
 }
-var Ve = M2(ge2, [["render", ke2], ["__file", "arrow-up.vue"]]);
-var $e = {
+var Ve = T2(xe, [["render", $e], ["__file", "arrow-up.vue"]]);
+var Ie = {
   name: "Refresh"
 };
-var Ie = {
+var fe2 = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 1024 1024"
 };
@@ -66903,21 +66905,21 @@ var Ge2 = createBaseVNode(
   -1
   /* HOISTED */
 );
-var Ae2 = [
+var Se2 = [
   Ge2
 ];
-function Ce(h3, n, _2, l2, v2, a2) {
-  return openBlock(), createElementBlock("svg", Ie, Ae2);
+function Ce(n, x2, b2, l2, y, a2) {
+  return openBlock(), createElementBlock("svg", fe2, Se2);
 }
-var De2 = M2($e, [["render", Ce], ["__file", "refresh.vue"]]);
-var Fe = {
+var Ae2 = T2(Ie, [["render", Ce], ["__file", "refresh.vue"]]);
+var De2 = {
   name: "Search"
 };
-var Ue = {
+var Fe = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 1024 1024"
 };
-var Ye2 = createBaseVNode(
+var Ue = createBaseVNode(
   "path",
   {
     fill: "currentColor",
@@ -66927,77 +66929,77 @@ var Ye2 = createBaseVNode(
   -1
   /* HOISTED */
 );
-var pe = [
-  Ye2
+var Ye2 = [
+  Ue
 ];
-function Se2(h3, n, _2, l2, v2, a2) {
-  return openBlock(), createElementBlock("svg", Ue, pe);
+function me2(n, x2, b2, l2, y, a2) {
+  return openBlock(), createElementBlock("svg", Fe, Ye2);
 }
-var Te2 = M2(Fe, [["render", Se2], ["__file", "search.vue"]]);
-function Me2(h3) {
-  return typeof h3 == "function" || Object.prototype.toString.call(h3) === "[object Object]" && !isVNode(h3);
+var Te2 = T2(De2, [["render", me2], ["__file", "search.vue"]]);
+function je2(n) {
+  return typeof n == "function" || Object.prototype.toString.call(n) === "[object Object]" && !isVNode(n);
 }
-var ze = defineComponent({
+var Le2 = defineComponent({
   name: "FormGenerator",
-  setup(h3, {
-    expose: n,
-    attrs: _2,
+  setup(n, {
+    expose: x2,
+    attrs: b2,
     slots: l2,
-    emit: v2
+    emit: y
   }) {
-    const a2 = _2, s2 = ref(), c2 = {}, b2 = ref(false), x2 = isNaN(a2.column) ? 4 : a2.column >= 4 ? a2.column : 4, G2 = {
+    const a2 = b2, d2 = ref(), t = {}, h3 = ref(false), v2 = isNaN(a2.column) ? 4 : a2.column >= 4 ? a2.column : 4, k = {
       submit: () => {
-        s2.value.validate((g) => {
-          g && v2("submit");
+        d2.value.validate((_2) => {
+          _2 && y("submit");
         });
       },
       reset: () => {
-        s2.value.resetFields(), v2("submit", "init");
+        d2.value.resetFields(), y("submit", "init");
       }
     };
-    function V(g) {
-      b2.value = g, a2.formOption.forEach((I3, E3) => {
-        E3 > x2 - 2 && (I3.show = g);
+    function g(_2) {
+      h3.value = _2, a2.formOption.forEach((I3, p2) => {
+        p2 > v2 - 2 && (I3.show = _2);
       });
     }
-    return a2.formOption.length >= x2 - 2 && (a2 == null ? void 0 : a2.type) === "search" && V(false), n(() => ({
-      ...s2.value,
-      ...G2,
-      $refs: c2
+    return a2.formOption.length >= v2 - 2 && (a2 == null ? void 0 : a2.type) === "search" && g(false), x2(() => ({
+      ...d2.value,
+      ...k,
+      $refs: t
     })), () => {
-      function g() {
+      function _2() {
         return createVNode(ElForm, mergeProps({
           class: `FormGenerator ${(a2 == null ? void 0 : a2.type) === "search" ? "FormGeneratorSearch" : ""} ${(a2 == null ? void 0 : a2.type) === "dialog" ? "FormGeneratorDialog" : ""}`,
           inline: (a2 == null ? void 0 : a2.type) === "search",
           "validate-on-rule-change": false,
           "label-width": a2.labelWidth || "auto"
         }, a2, {
-          ref: s2
+          ref: d2
         }), {
           default: () => [a2.formOption.map((e) => {
-            let y;
+            let w2;
             if (!(e.hasOwnProperty("show") && e.show === false))
               return createVNode(ElFormItem, mergeProps(e.formItem, {
                 key: e.formItem.prop
-              }), Me2(y = I3(e)) ? y : {
-                default: () => [y]
+              }), je2(w2 = I3(e)) ? w2 : {
+                default: () => [w2]
               });
           }), a2.disabled === true || a2.noFooter || !a2.onSubmit ? "" : createVNode(ElFormItem, {
-            class: `btnItem ${b2.value ? "searchItem" : ""}`
+            class: `btnItem ${h3.value ? "searchItem" : ""}`
           }, {
-            default: () => l2 != null && l2.default ? createVNode(Fragment, null, [l2.default()[0].children]) : (a2 == null ? void 0 : a2.type) === "search" ? E3() : createVNode(Fragment, null, [(a2 == null ? void 0 : a2.type) === "dialog" ? createVNode(ElButton, {
+            default: () => l2 != null && l2.default ? createVNode(Fragment, null, [l2.default()[0].children]) : (a2 == null ? void 0 : a2.type) === "search" ? p2() : createVNode(Fragment, null, [(a2 == null ? void 0 : a2.type) === "dialog" ? createVNode(ElButton, {
               onClick: (e) => {
-                var k, F2;
-                function y(A2) {
-                  return A2.parentElement.classList.value.split(" ").includes("el-dialog") ? A2.parentElement : y(A2.parentElement);
+                var $, A2;
+                function w2(C2) {
+                  return C2.parentElement.classList.value.split(" ").includes("el-dialog") ? C2.parentElement : w2(C2.parentElement);
                 }
-                (F2 = (k = y(e.target).querySelector(".el-dialog__headerbtn")) == null ? void 0 : k.click) == null || F2.call(k);
+                (A2 = ($ = w2(e.target).querySelector(".el-dialog__headerbtn")) == null ? void 0 : $.click) == null || A2.call($);
               }
             }, {
               default: () => [createTextVNode("取消")]
             }) : "", createVNode(ElButton, {
               type: "primary",
-              onClick: G2.submit
+              onClick: k.submit
             }, {
               default: () => [createTextVNode("确定")]
             })]),
@@ -67006,22 +67008,22 @@ var ze = defineComponent({
         });
       }
       function I3(e) {
-        var y, k, F2, A2, B2, f2, j, m2, N3, R2, z, q2, P3;
-        switch (c2[e.formItem.prop] = ref(), e.type) {
+        var w2, $, A2, C2, j, M2, B2, N3, P3, R2, z, q2, L;
+        switch (t[e.formItem.prop] = ref(), e.type) {
           case "input":
             return createVNode(ElInput, mergeProps({
-              ref: c2[e.formItem.prop],
+              ref: t[e.formItem.prop],
               clearable: true,
               maxlength: 30
             }, e == null ? void 0 : e.control, {
               modelValue: a2.model[e.formItem.prop],
               "onUpdate:modelValue": (u2) => a2.model[e.formItem.prop] = u2
             }), {
-              ...(y = e == null ? void 0 : e.control) == null ? void 0 : y.slots
+              ...(w2 = e == null ? void 0 : e.control) == null ? void 0 : w2.slots
             });
           case "input-number":
             return createVNode(ElInputNumber, mergeProps({
-              ref: c2[e.formItem.prop],
+              ref: t[e.formItem.prop],
               min: 0,
               max: 100
             }, e == null ? void 0 : e.control, {
@@ -67030,134 +67032,134 @@ var ze = defineComponent({
             }), null);
           case "select":
             return createVNode(ElSelect, mergeProps({
-              ref: c2[e.formItem.prop],
+              ref: t[e.formItem.prop],
               clearable: true
             }, e == null ? void 0 : e.control, {
               modelValue: a2.model[e.formItem.prop],
               "onUpdate:modelValue": (u2) => a2.model[e.formItem.prop] = u2
             }), {
               default: () => {
-                var u2, w2;
-                return [((u2 = e == null ? void 0 : e.control) == null ? void 0 : u2.option) instanceof Array ? (w2 = e == null ? void 0 : e.control) == null ? void 0 : w2.option.map((d2) => createVNode(ElOption, mergeProps(d2, {
-                  key: d2.value
+                var u2, E3;
+                return [((u2 = e == null ? void 0 : e.control) == null ? void 0 : u2.option) instanceof Array ? (E3 = e == null ? void 0 : e.control) == null ? void 0 : E3.option.map((c2) => createVNode(ElOption, mergeProps(c2, {
+                  key: c2.value
                 }), {
-                  ...d2 == null ? void 0 : d2.slots
+                  ...c2 == null ? void 0 : c2.slots
                 })) : ""];
               }
             });
           case "tree-select":
             return createVNode(ElTreeSelect, mergeProps({
-              ref: c2[e.formItem.prop],
+              ref: t[e.formItem.prop],
               clearable: true
             }, e == null ? void 0 : e.control, {
               modelValue: a2.model[e.formItem.prop],
               "onUpdate:modelValue": (u2) => a2.model[e.formItem.prop] = u2
             }), {
-              ...(k = e == null ? void 0 : e.control) == null ? void 0 : k.slots
+              ...($ = e == null ? void 0 : e.control) == null ? void 0 : $.slots
             });
           case "cascader":
             return createVNode(ElCascader, mergeProps({
-              ref: c2[e.formItem.prop]
+              ref: t[e.formItem.prop]
             }, e == null ? void 0 : e.control, {
               modelValue: a2.model[e.formItem.prop],
               "onUpdate:modelValue": (u2) => a2.model[e.formItem.prop] = u2
             }), {
-              ...(F2 = e == null ? void 0 : e.control) == null ? void 0 : F2.slots
+              ...(A2 = e == null ? void 0 : e.control) == null ? void 0 : A2.slots
             });
           case "radio":
             return createVNode(ElRadioGroup, mergeProps({
-              ref: c2[e.formItem.prop]
+              ref: t[e.formItem.prop]
             }, e == null ? void 0 : e.control, {
               modelValue: a2.model[e.formItem.prop],
               "onUpdate:modelValue": (u2) => a2.model[e.formItem.prop] = u2
             }), {
               default: () => {
-                var u2, w2;
-                return [((u2 = e == null ? void 0 : e.control) == null ? void 0 : u2.radioGroup) instanceof Array ? (w2 = e == null ? void 0 : e.control) == null ? void 0 : w2.radioGroup.map((d2) => createVNode(ElRadio, mergeProps(d2, {
-                  label: d2.value,
-                  key: d2.label
+                var u2, E3;
+                return [((u2 = e == null ? void 0 : e.control) == null ? void 0 : u2.radioGroup) instanceof Array ? (E3 = e == null ? void 0 : e.control) == null ? void 0 : E3.radioGroup.map((c2) => createVNode(ElRadio, mergeProps(c2, {
+                  label: c2.value,
+                  key: c2.label
                 }), {
-                  default: () => [d2.label],
-                  ...d2 == null ? void 0 : d2.slots
+                  default: () => [c2.label],
+                  ...c2 == null ? void 0 : c2.slots
                 })) : ""];
               }
             });
           case "radio-button":
             return createVNode(ElRadioGroup, mergeProps({
-              ref: c2[e.formItem.prop]
+              ref: t[e.formItem.prop]
             }, e == null ? void 0 : e.control, {
               modelValue: a2.model[e.formItem.prop],
               "onUpdate:modelValue": (u2) => a2.model[e.formItem.prop] = u2
             }), {
               default: () => {
-                var u2, w2;
-                return [((u2 = e == null ? void 0 : e.control) == null ? void 0 : u2.radioGroup) instanceof Array ? (w2 = e == null ? void 0 : e.control) == null ? void 0 : w2.radioGroup.map((d2) => createVNode(ElRadioButton, mergeProps(d2, {
-                  label: d2.value,
-                  key: d2.label
+                var u2, E3;
+                return [((u2 = e == null ? void 0 : e.control) == null ? void 0 : u2.radioGroup) instanceof Array ? (E3 = e == null ? void 0 : e.control) == null ? void 0 : E3.radioGroup.map((c2) => createVNode(ElRadioButton, mergeProps(c2, {
+                  label: c2.value,
+                  key: c2.label
                 }), {
-                  default: () => [d2.label],
-                  ...d2 == null ? void 0 : d2.slots
+                  default: () => [c2.label],
+                  ...c2 == null ? void 0 : c2.slots
                 })) : ""];
               }
             });
           case "checkbox":
             return createVNode(ElCheckboxGroup, mergeProps({
-              ref: c2[e.formItem.prop]
+              ref: t[e.formItem.prop]
             }, e == null ? void 0 : e.control, {
               modelValue: a2.model[e.formItem.prop],
               "onUpdate:modelValue": (u2) => a2.model[e.formItem.prop] = u2
             }), {
               default: () => {
-                var u2, w2;
-                return [((u2 = e == null ? void 0 : e.control) == null ? void 0 : u2.checkboxGroup) instanceof Array ? (w2 = e == null ? void 0 : e.control) == null ? void 0 : w2.checkboxGroup.map((d2) => createVNode(ElCheckbox, mergeProps(d2, {
-                  label: d2.value,
-                  key: d2.label
+                var u2, E3;
+                return [((u2 = e == null ? void 0 : e.control) == null ? void 0 : u2.checkboxGroup) instanceof Array ? (E3 = e == null ? void 0 : e.control) == null ? void 0 : E3.checkboxGroup.map((c2) => createVNode(ElCheckbox, mergeProps(c2, {
+                  label: c2.value,
+                  key: c2.label
                 }), {
-                  default: () => [d2.label],
-                  ...d2 == null ? void 0 : d2.slots
+                  default: () => [c2.label],
+                  ...c2 == null ? void 0 : c2.slots
                 })) : ""];
               }
             });
           case "checkbox-button":
             return createVNode(ElCheckboxGroup, mergeProps({
-              ref: c2[e.formItem.prop]
+              ref: t[e.formItem.prop]
             }, e == null ? void 0 : e.control, {
               modelValue: a2.model[e.formItem.prop],
               "onUpdate:modelValue": (u2) => a2.model[e.formItem.prop] = u2
             }), {
               default: () => {
-                var u2, w2;
-                return [((u2 = e == null ? void 0 : e.control) == null ? void 0 : u2.checkboxGroup) instanceof Array ? (w2 = e == null ? void 0 : e.control) == null ? void 0 : w2.checkboxGroup.map((d2) => createVNode(ElCheckboxButton, mergeProps(d2, {
-                  label: d2.value,
-                  key: d2.label
+                var u2, E3;
+                return [((u2 = e == null ? void 0 : e.control) == null ? void 0 : u2.checkboxGroup) instanceof Array ? (E3 = e == null ? void 0 : e.control) == null ? void 0 : E3.checkboxGroup.map((c2) => createVNode(ElCheckboxButton, mergeProps(c2, {
+                  label: c2.value,
+                  key: c2.label
                 }), {
-                  default: () => [d2.label],
-                  ...d2 == null ? void 0 : d2.slots
+                  default: () => [c2.label],
+                  ...c2 == null ? void 0 : c2.slots
                 })) : ""];
               }
             });
           case "date-picker":
           case "date-time-picker":
-            const L = {
+            const W2 = {
               datetimerange: "YYYY-MM-DD hh:mm:ss",
               daterange: "YYYY-MM-DD",
               datetime: "YYYY-MM-DD hh:mm:ss",
               date: "YYYY-MM-DD"
-            }[((A2 = e == null ? void 0 : e.control) == null ? void 0 : A2.type) || "date"];
+            }[((C2 = e == null ? void 0 : e.control) == null ? void 0 : C2.type) || "date"];
             return createVNode(ElDatePicker, mergeProps({
-              ref: c2[e.formItem.prop],
+              ref: t[e.formItem.prop],
               clearable: true,
-              format: L,
-              "value-format": L
+              format: W2,
+              "value-format": W2
             }, e == null ? void 0 : e.control, {
               modelValue: a2.model[e.formItem.prop],
               "onUpdate:modelValue": (u2) => a2.model[e.formItem.prop] = u2
             }), {
-              ...(B2 = e == null ? void 0 : e.control) == null ? void 0 : B2.slots
+              ...(j = e == null ? void 0 : e.control) == null ? void 0 : j.slots
             });
           case "time-picker":
             return createVNode(ElTimePicker, mergeProps({
-              ref: c2[e.formItem.prop],
+              ref: t[e.formItem.prop],
               clearable: true
             }, e == null ? void 0 : e.control, {
               modelValue: a2.model[e.formItem.prop],
@@ -67165,14 +67167,14 @@ var ze = defineComponent({
             }), null);
           case "switch":
             return createVNode(ElSwitch, mergeProps({
-              ref: c2[e.formItem.prop]
+              ref: t[e.formItem.prop]
             }, e == null ? void 0 : e.control, {
               modelValue: a2.model[e.formItem.prop],
               "onUpdate:modelValue": (u2) => a2.model[e.formItem.prop] = u2
             }), null);
           case "upload":
             return createVNode(ElUpload, mergeProps({
-              ref: c2[e.formItem.prop]
+              ref: t[e.formItem.prop]
             }, e == null ? void 0 : e.control, {
               "file-list": a2.model[e.formItem.prop],
               "onUpdate:file-list": (u2) => a2.model[e.formItem.prop] = u2
@@ -67182,63 +67184,127 @@ var ze = defineComponent({
               }, {
                 default: () => [createTextVNode("上传文件")]
               }),
-              ...(f2 = e == null ? void 0 : e.control) == null ? void 0 : f2.slots
+              ...(M2 = e == null ? void 0 : e.control) == null ? void 0 : M2.slots
             });
           case "slot":
-            return (m2 = (j = e == null ? void 0 : e.control) == null ? void 0 : j.slots) != null && m2.default && typeof ((R2 = (N3 = e == null ? void 0 : e.control) == null ? void 0 : N3.slots) == null ? void 0 : R2.default) == "function" ? createVNode(Fragment, null, [(q2 = (z = e.control.slots).default) == null ? void 0 : q2.call(z, {
+            return (N3 = (B2 = e == null ? void 0 : e.control) == null ? void 0 : B2.slots) != null && N3.default && typeof ((R2 = (P3 = e == null ? void 0 : e.control) == null ? void 0 : P3.slots) == null ? void 0 : R2.default) == "function" ? createVNode(Fragment, null, [(q2 = (z = e.control.slots).default) == null ? void 0 : q2.call(z, {
               form: a2.model,
               data: a2.model[e.formItem.prop]
-            })]) : l2[e.formItem.prop] ? (P3 = l2[e.formItem.prop]) == null ? void 0 : P3.call(l2, {
+            })]) : l2[e.formItem.prop] ? (L = l2[e.formItem.prop]) == null ? void 0 : L.call(l2, {
               form: a2.model,
               data: a2.model[e.formItem.prop]
             }) : a2.model[e.formItem.prop];
         }
       }
-      function E3() {
+      function p2() {
         return createVNode(Fragment, null, [createVNode(ElButton, {
           type: "primary",
-          onClick: G2.submit,
+          onClick: k.submit,
           icon: Te2
         }, {
           default: () => [createTextVNode("搜索")]
         }), createVNode(ElButton, {
-          onClick: G2.reset,
-          icon: De2
+          onClick: k.reset,
+          icon: Ae2
         }, {
           default: () => [createTextVNode("重置")]
-        }), a2.type === "search" && a2.formOption.length > x2 - 1 ? createVNode(Fragment, null, [createVNode(ElButton, {
+        }), a2.type === "search" && a2.formOption.length > v2 - 1 ? createVNode(Fragment, null, [createVNode(ElButton, {
           text: true,
           type: "primary",
-          class: `expandBtn ${b2.value ? "up" : "down"}`,
+          class: `expandBtn ${h3.value ? "up" : "down"}`,
           onClick: () => {
-            V(!b2.value);
+            g(!h3.value);
           },
           icon: Ve
         }, {
-          default: () => [b2.value ? "收起" : "展开"]
+          default: () => [h3.value ? "收起" : "展开"]
         })]) : ""]);
       }
-      return g();
+      return _2();
     };
   }
 });
-var Be2 = (h3, n, _2, l2) => {
-  if (!Array.isArray(h3))
-    return [];
-  const v2 = [];
-  let a2 = [];
-  return l2 && (a2 = Object.keys(l2)), h3.forEach((s2) => {
-    let c2 = {
-      label: typeof s2 == "string" ? s2 : s2[n],
-      value: typeof s2 == "string" ? s2 : s2[_2]
+function Me2(n) {
+  return typeof n == "function" || Object.prototype.toString.call(n) === "[object Object]" && !isVNode(n);
+}
+var We2 = defineComponent({
+  name: "StepsGenerator",
+  setup(n, {
+    expose: x2,
+    attrs: b2,
+    slots: l2,
+    emit: y
+  }) {
+    const a2 = b2, d2 = ref(0);
+    function t() {
+      a2 != null && a2.onPrev && typeof (a2 == null ? void 0 : a2.onPrev) == "function" ? a2.onPrev(d2.value, (v2) => {
+        v2 ? d2.value = v2 : d2.value === 0 || d2.value--;
+      }) : d2.value === 0 || d2.value--;
+    }
+    function h3() {
+      a2 != null && a2.onNext && typeof (a2 == null ? void 0 : a2.onNext) == "function" ? a2.onNext(d2.value, (v2) => {
+        v2 ? d2.value = v2 : d2.value === a2.stepsOption.length - 1 || d2.value++;
+      }) : d2.value === a2.stepsOption.length - 1 || d2.value++;
+    }
+    return x2({
+      prev: t,
+      next: h3
+    }), () => {
+      function v2() {
+        let k;
+        return createVNode("div", {
+          class: "StepsGenerator"
+        }, [createVNode(ElSteps, mergeProps({
+          "align-center": true
+        }, a2, {
+          active: d2.value
+        }), Me2(k = a2.stepsOption.map((g) => createVNode(ElStep, g, {
+          ...g == null ? void 0 : g.slots
+        }))) ? k : {
+          default: () => [k]
+        }), createVNode("div", {
+          class: "container"
+        }, [Object.keys(l2).map((g, _2) => createVNode("div", {
+          style: {
+            display: d2.value === _2 ? "block" : "none"
+          }
+        }, [l2[g]()]))]), createVNode("div", {
+          class: "btn-group"
+        }, [l2.default ? l2.default()[0].children : createVNode(Fragment, null, [d2.value > 0 ? createVNode(ElButton, {
+          type: "primary",
+          plain: true,
+          onClick: t
+        }, {
+          default: () => [createTextVNode("上一步")]
+        }) : "", createVNode(ElButton, {
+          type: "primary",
+          plain: true,
+          onClick: h3
+        }, {
+          default: () => [createTextVNode(" "), d2.value === a2.stepsOption.length - 1 ? "提交" : "下一步"]
+        })])])]);
+      }
+      return v2();
     };
-    l2 && a2.forEach((b2) => {
-      c2[b2] = s2[b2];
-    }), v2.push(c2);
-  }), v2;
+  }
+});
+var Be2 = (n, x2, b2, l2) => {
+  if (!Array.isArray(n))
+    return [];
+  const y = [];
+  let a2 = [];
+  return l2 && (a2 = Object.keys(l2)), n.forEach((d2) => {
+    let t = {
+      label: typeof d2 == "string" ? d2 : d2[x2],
+      value: typeof d2 == "string" ? d2 : d2[b2]
+    };
+    l2 && a2.forEach((h3) => {
+      t[h3] = d2[h3];
+    }), y.push(t);
+  }), y;
 };
-var fe2 = (h3, n = []) => {
-  const _2 = {
+var Ne = (n, x2 = []) => {
+  const b2 = {
     input: "输入",
     "input-number": "输入",
     select: "选择",
@@ -67255,25 +67321,26 @@ var fe2 = (h3, n = []) => {
     upload: "上传",
     slot: "完善"
   };
-  return h3.forEach((l2) => {
-    var a2, s2, c2;
-    const v2 = { required: true, message: `请${_2[l2.type] ?? "完善"}${l2.formItem.label ?? ""}`, trigger: "change" };
-    if (!n.includes(l2.formItem.prop) && (((a2 = l2.formItem) == null ? void 0 : a2.rules) instanceof Object ? l2.formItem.rules = [v2, l2.formItem.rules] : Array.isArray((s2 = l2.formItem) == null ? void 0 : s2.rules) ? l2.formItem.rules.unshift(v2) : l2.formItem.rules = [v2], ((c2 = l2.formItem) == null ? void 0 : c2.rules) instanceof Array))
-      for (let b2 = 0; b2 < l2.formItem.rules.length; b2++) {
-        let x2 = l2.formItem.rules[b2];
-        x2.message || (x2.message = "格式有误");
+  return n.forEach((l2) => {
+    var a2, d2, t;
+    const y = { required: true, message: `请${b2[l2.type] ?? "完善"}${l2.formItem.label ?? ""}`, trigger: "change" };
+    if (!x2.includes(l2.formItem.prop) && (((a2 = l2.formItem) == null ? void 0 : a2.rules) instanceof Object ? l2.formItem.rules = [y, l2.formItem.rules] : Array.isArray((d2 = l2.formItem) == null ? void 0 : d2.rules) ? l2.formItem.rules.unshift(y) : l2.formItem.rules = [y], ((t = l2.formItem) == null ? void 0 : t.rules) instanceof Array))
+      for (let h3 = 0; h3 < l2.formItem.rules.length; h3++) {
+        let v2 = l2.formItem.rules[h3];
+        v2.message || (v2.message = "格式有误");
       }
-  }), h3;
+  }), n;
 };
-var qe = Object.freeze(Object.defineProperty({
+var He2 = Object.freeze(Object.defineProperty({
   __proto__: null,
   getOption: Be2,
-  setRequired: fe2
+  setRequired: Ne
 }, Symbol.toStringTag, { value: "Module" }));
 export {
-  ze as FormGenerator,
-  qe as GeneratorUtils,
-  Re2 as TableGenerator
+  Le2 as FormGenerator,
+  He2 as GeneratorUtils,
+  We2 as StepsGenerator,
+  qe as TableGenerator
 };
 /*! Bundled license information:
 
