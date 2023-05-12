@@ -1,1 +1,0 @@
-import{_ as s,h as n,i as a,O as l}from"./chunks/framework.9d871480.js";const i=JSON.parse('{"title":"生成器类型","description":"","frontmatter":{},"headers":[],"relativePath":"introduce/Type.md"}'),o={name:"introduce/Type.md"},p=l("",8),t=[p];function e(c,r,D,y,F,C){return n(),a("div",null,t)}const B=s(o,[["render",e]]);export{i as __pageData,B as default};

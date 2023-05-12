@@ -1,4 +1,4 @@
-import "./chunk-DFKQJ226.js";
+import "./chunk-4EOJPDL2.js";
 
 // ../element-plus-generator-demo/node_modules/common-rules/dist/index.js
 var e = /^[GCDZTSPKXLY1-9]\d{1,4}$/;

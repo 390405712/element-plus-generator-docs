@@ -34,25 +34,28 @@ features:
 
 ```vue
   <template>
-    <FormGenerator :model="form" :formOption="formOption" @submit="onSubmit"/>
+    <FormGenerator v-bind="{ ...formAttrs }"/>
   </template>
 
   <script lang="tsx" setup>
   import { ref } from 'vue'
+  import type { FormAttrs } from 'element-plus-generator/lib/type'
 
-  let form = ref({})
-  let formOption = ref([
-    {
-      type: 'input',
-      formItem: {
-        prop: 'name',
-        label: 'Activity name',
+  const formAttrs = ref<FormAttrs>({
+    model:{},
+    formOption:[
+      {
+        type: 'input',
+        formItem: {
+          prop: 'name',
+          label: 'Activity name',
+        },
       },
-    },
-  ])
-  const onSubmit = () => {
-    console.log('submit!')
-  }
+    ],
+    onSubmit:()=>{
+      console.log('submit!')
+    }
+  })
   </script>
 
 ```
@@ -90,113 +93,110 @@ features:
 
 ```vue
   <template>
-    <FormGenerator
-      ref="RefFormGenerator"
-      :model="form"
-      :formOption="formOption"
-      @submit="submit"
-      label-width="120px"
-      status-icon/>
+    <FormGenerator ref="RefFormGenerator" v-bind="{ ...formAttrs }"/>
   </template>
 
   <script lang="tsx" setup>
   import { FormGenerator, GeneratorUtils } from 'element-plus-generator'
-  import type { FormOption,RefFormGenerator } from 'element-plus-generator/lib/type'
+  import type { FormAttrs,RefFormGenerator } from 'element-plus-generator/lib/type'
   import { ref } from 'vue'
 
   let RefFormGenerator = ref<RefFormGenerator>()
-  let form = ref({
-    name: '',
-    region: '',
-    count: '',
-    date: '',
-    delivery: false,
-    type: [],
-    resource: '',
-    desc: '',
+  const formAttrs = ref<FormAttrs>({
+    labelWidth:'120px',
+    statusIcon:true,
+    model:{
+      name: '',
+      region: '',
+      count: '',
+      date: '',
+      delivery: false,
+      type: [],
+      resource: '',
+      desc: '',
+    },
+    formOption:[
+      {
+        type: 'input',
+        formItem: {
+          prop: 'name',
+          label: 'Activity name',
+        },
+      },
+      {
+        type: 'select',
+        formItem: {
+          prop: 'region',
+          label: 'Activity zone',
+        },
+        control: {
+          option: [
+            {label: 'Option1',value: 'Option1'},
+            {label: 'Option2',value: 'Option2'},
+          ]
+        },
+      },
+      {
+        type: 'datetime',
+        formItem: {
+          prop: 'date',
+          label: 'Activity time',
+        },
+        control: {
+          type: "datetime"
+        },
+      },
+      {
+        type: 'switch',
+        formItem: {
+          prop: 'delivery',
+          label: 'Instant delivery',
+        },
+      },
+      {
+        type: 'checkbox',
+        formItem: {
+          prop: 'type',
+          label: 'Activity type',
+        },
+        control: {
+          checkboxGroup: [
+            {label: 'Online activities',value: 'Online activities'},
+            {label: 'Promotion activities',value: 'Promotion activities'},
+            {label: 'Offline activities',value: 'Offline activities'},
+            {label: 'Simple brand exposure',value: 'Simple brand exposure'},
+          ]
+        },
+      },
+      {
+        type: 'radio',
+        formItem: {
+          prop: 'resource',
+          label: 'Resources',
+        },
+        control: {
+          radioGroup: [
+            {label: 'Sponsor',value: 'Sponsor'},
+            {label: 'Venue',value: 'Venue'},
+          ]
+        },
+      },
+      {
+        type: 'input',
+        formItem: {
+          prop: 'form',
+          label: 'Activity form',
+        },
+        control: {
+          type: 'textarea'
+        }
+      },
+    ],
+    onSubmit:()=>{
+      console.log(RefFormGenerator.value());
+    }
   })
-  let formOption = ref<FormOption[]>([
-    {
-      type: 'input',
-      formItem: {
-        prop: 'name',
-        label: 'Activity name',
-      },
-    },
-    {
-      type: 'select',
-      formItem: {
-        prop: 'region',
-        label: 'Activity zone',
-      },
-      control: {
-        option: [
-          {label: 'Option1',value: 'Option1'},
-          {label: 'Option2',value: 'Option2'},
-        ]
-      },
-    },
-    {
-      type: 'datetime',
-      formItem: {
-        prop: 'date',
-        label: 'Activity time',
-      },
-      control: {
-        type: "datetime"
-      },
-    },
-    {
-      type: 'switch',
-      formItem: {
-        prop: 'delivery',
-        label: 'Instant delivery',
-      },
-    },
-    {
-      type: 'checkbox',
-      formItem: {
-        prop: 'type',
-        label: 'Activity type',
-      },
-      control: {
-        checkboxGroup: [
-          {label: 'Online activities',value: 'Online activities'},
-          {label: 'Promotion activities',value: 'Promotion activities'},
-          {label: 'Offline activities',value: 'Offline activities'},
-          {label: 'Simple brand exposure',value: 'Simple brand exposure'},
-        ]
-      },
-    },
-    {
-      type: 'radio',
-      formItem: {
-        prop: 'resource',
-        label: 'Resources',
-      },
-      control: {
-        radioGroup: [
-          {label: 'Sponsor',value: 'Sponsor'},
-          {label: 'Venue',value: 'Venue'},
-        ]
-      },
-    },
-    {
-      type: 'input',
-      formItem: {
-        prop: 'form',
-        label: 'Activity form',
-      },
-      control: {
-        type: 'textarea'
-      }
-    },
-  ])
-  GeneratorUtils.setRequired(formOption.value)
-
-  function submit() {
-    console.log(RefFormGenerator.value());
-  }
+  GeneratorUtils.setRequired(formAttrs.value.formOption)
   </script>
 
 ```

@@ -3,7 +3,7 @@
 ## 入口
 <<< ./../element-plus-generator/lib/index.d.ts
 
-## 关于FormGenerator、TableGenerator
+## 关于FormGenerator、TableGenerator、StepsGenerator
 <<< ./../element-plus-generator/lib/type.d.ts
 <<< ./../element-plus-generator/lib/element-plus.d.ts
 
