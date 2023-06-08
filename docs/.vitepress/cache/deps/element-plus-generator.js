@@ -24,7 +24,7 @@ import {
   ElTimePicker,
   ElTreeSelect,
   ElUpload
-} from "./chunk-XHVEUFGG.js";
+} from "./chunk-ALBYXT7B.js";
 import {
   Fragment,
   createBaseVNode,
@@ -38,10 +38,9 @@ import {
   openBlock,
   ref,
   watch
-} from "./chunk-4S7LXNVO.js";
-import "./chunk-4EOJPDL2.js";
+} from "./chunk-YJNUPD57.js";
 
-// ../element-plus-generator-demo/node_modules/element-plus-generator/dist/index.js
+// node_modules/element-plus-generator/dist/index.js
 (function() {
   try {
     var elementStyle = document.createElement("style");
@@ -53,14 +52,14 @@ import "./chunk-4EOJPDL2.js";
 })();
 var qe = defineComponent({
   name: "TableGenerator",
-  setup(n, {
+  setup(s, {
     expose: x,
     attrs: b,
     slots: l,
     emit: y
   }) {
     const a = ref(), d = b;
-    let t, h = (/* @__PURE__ */ new Date()).getTime(), v = ref(false), k = ref(0);
+    let t, h = (/* @__PURE__ */ new Date()).getTime(), v = ref(false), p = ref(0);
     return watch(() => d.loading, (g) => {
       g ? nextTick(() => {
         t = ElLoading.service({
@@ -76,13 +75,13 @@ var qe = defineComponent({
         let _ = 0;
         document.querySelectorAll(".content-wrapper-width").forEach((I) => {
           I.offsetWidth > _ && (_ = I.offsetWidth);
-        }), k.value = _ > 0 ? _ + 32 : "auto", v.value = true;
+        }), p.value = _ > 0 ? _ + 32 : "auto", v.value = true;
       });
     }, {
       immediate: true
     }), x(() => a.value), () => {
-      function g(p) {
-        return p.map((e) => ["selection", "index", "expand"].includes(e.type) ? createVNode(ElTableColumn, mergeProps({
+      function g(k) {
+        return k.map((e) => ["selection", "index", "expand"].includes(e.type) ? createVNode(ElTableColumn, mergeProps({
           type: e.type
         }, e), {
           ...e == null ? void 0 : e.slots
@@ -113,15 +112,15 @@ var qe = defineComponent({
           default: () => [g(d.tableOption), l != null && l.operation ? createVNode(ElTableColumn, {
             fixed: "right",
             label: "操作",
-            width: k.value
+            width: p.value
           }, {
-            default: (p) => {
+            default: (k) => {
               var e;
               return createVNode("div", {
                 class: "content-wrapper"
               }, [(e = l.operation) == null ? void 0 : e.call(l, {
-                $index: p.$index,
-                row: p.row
+                $index: k.$index,
+                row: k.row
               })]);
             }
           }) : ""],
@@ -138,14 +137,14 @@ var qe = defineComponent({
           default: () => [createVNode(ElTableColumn, {
             fixed: "right"
           }, {
-            default: (p) => {
+            default: (k) => {
               var e;
               return createVNode("div", {
                 style: "display:inline-block;opacity:0",
                 class: "content-wrapper content-wrapper-width"
               }, [(e = l.operation) == null ? void 0 : e.call(l, {
-                $index: p.$index,
-                row: p.row
+                $index: k.$index,
+                row: k.row
               })]);
             }
           })]
@@ -155,8 +154,8 @@ var qe = defineComponent({
     };
   }
 });
-var m = (n, x) => {
-  let b = n.__vccOpts || n;
+var m = (s, x) => {
+  let b = s.__vccOpts || s;
   for (let [l, y] of x)
     b[l] = y;
   return b;
@@ -168,7 +167,7 @@ var Ee = {
   xmlns: "http://www.w3.org/2000/svg",
   viewBox: "0 0 1024 1024"
 };
-var ke = createBaseVNode(
+var pe = createBaseVNode(
   "path",
   {
     fill: "currentColor",
@@ -178,11 +177,11 @@ var ke = createBaseVNode(
   -1
   /* HOISTED */
 );
-var pe = [
-  ke
+var ke = [
+  pe
 ];
-function $e(n, x, b, l, y, a) {
-  return openBlock(), createElementBlock("svg", Ee, pe);
+function $e(s, x, b, l, y, a) {
+  return openBlock(), createElementBlock("svg", Ee, ke);
 }
 var Ve = m(xe, [["render", $e], ["__file", "arrow-up.vue"]]);
 var Ie = {
@@ -205,7 +204,7 @@ var Ge = createBaseVNode(
 var Se = [
   Ge
 ];
-function Ce(n, x, b, l, y, a) {
+function Ce(s, x, b, l, y, a) {
   return openBlock(), createElementBlock("svg", fe, Se);
 }
 var Ae = m(Ie, [["render", Ce], ["__file", "refresh.vue"]]);
@@ -229,22 +228,22 @@ var Ye = createBaseVNode(
 var Fe = [
   Ye
 ];
-function Te(n, x, b, l, y, a) {
+function Te(s, x, b, l, y, a) {
   return openBlock(), createElementBlock("svg", Ue, Fe);
 }
 var me = m(De, [["render", Te], ["__file", "search.vue"]]);
-function je(n) {
-  return typeof n == "function" || Object.prototype.toString.call(n) === "[object Object]" && !isVNode(n);
+function je(s) {
+  return typeof s == "function" || Object.prototype.toString.call(s) === "[object Object]" && !isVNode(s);
 }
 var Le = defineComponent({
   name: "FormGenerator",
-  setup(n, {
+  setup(s, {
     expose: x,
     attrs: b,
     slots: l,
     emit: y
   }) {
-    const a = b, d = ref(), t = {}, h = ref(false), v = isNaN(a.column) ? 4 : a.column >= 4 ? a.column : 4, k = {
+    const a = b, d = ref(), t = {}, h = ref(false), v = isNaN(a.column) ? 4 : a.column >= 4 ? a.column : 4, p = {
       submit: () => {
         d.value.validate((_) => {
           _ && y("submit");
@@ -255,13 +254,13 @@ var Le = defineComponent({
       }
     };
     function g(_) {
-      h.value = _, a.formOption.forEach((I, p) => {
-        p > v - 2 && (I.show = _);
+      h.value = _, a.formOption.forEach((I, k) => {
+        k > v - 2 && (I.show = _);
       });
     }
     return a.formOption.length >= v - 2 && (a == null ? void 0 : a.type) === "search" && g(false), x(() => ({
       ...d.value,
-      ...k,
+      ...p,
       $refs: t
     })), () => {
       function _() {
@@ -275,16 +274,16 @@ var Le = defineComponent({
         }), {
           default: () => [a.formOption.map((e) => {
             let w;
-            if (!(e.hasOwnProperty("show") && e.show === false))
-              return createVNode(ElFormItem, mergeProps(e.formItem, {
-                key: e.formItem.prop
-              }), je(w = I(e)) ? w : {
-                default: () => [w]
-              });
+            return createVNode(ElFormItem, mergeProps(e.formItem, {
+              style: e.hasOwnProperty("show") && e.show === false ? "display:none" : "",
+              key: e.formItem.prop
+            }), je(w = I(e)) ? w : {
+              default: () => [w]
+            });
           }), a.disabled === true || a.noFooter || !a.onSubmit ? "" : createVNode(ElFormItem, {
             class: `btnItem ${h.value ? "searchItem" : ""}`
           }, {
-            default: () => l != null && l.default ? createVNode(Fragment, null, [l.default()[0].children]) : (a == null ? void 0 : a.type) === "search" ? p() : createVNode(Fragment, null, [(a == null ? void 0 : a.type) === "dialog" ? createVNode(ElButton, {
+            default: () => l != null && l.default && typeof (l == null ? void 0 : l.default()[0].type) == "string" ? createVNode(Fragment, null, [l.default()[0].children]) : (a == null ? void 0 : a.type) === "search" ? k() : createVNode(Fragment, null, [(a == null ? void 0 : a.type) === "dialog" ? createVNode(ElButton, {
               onClick: (e) => {
                 var $, A;
                 function w(C) {
@@ -296,7 +295,7 @@ var Le = defineComponent({
               default: () => [createTextVNode("取消")]
             }) : "", createVNode(ElButton, {
               type: "primary",
-              onClick: k.submit
+              onClick: p.submit
             }, {
               default: () => [createTextVNode("确定")]
             })]),
@@ -493,15 +492,15 @@ var Le = defineComponent({
             }) : a.model[e.formItem.prop];
         }
       }
-      function p() {
+      function k() {
         return createVNode(Fragment, null, [createVNode(ElButton, {
           type: "primary",
-          onClick: k.submit,
+          onClick: p.submit,
           icon: me
         }, {
           default: () => [createTextVNode("搜索")]
         }), createVNode(ElButton, {
-          onClick: k.reset,
+          onClick: p.reset,
           icon: Ae
         }, {
           default: () => [createTextVNode("重置")]
@@ -521,12 +520,12 @@ var Le = defineComponent({
     };
   }
 });
-function Me(n) {
-  return typeof n == "function" || Object.prototype.toString.call(n) === "[object Object]" && !isVNode(n);
+function Me(s) {
+  return typeof s == "function" || Object.prototype.toString.call(s) === "[object Object]" && !isVNode(s);
 }
 var We = defineComponent({
   name: "StepsGenerator",
-  setup(n, {
+  setup(s, {
     expose: x,
     attrs: b,
     slots: l,
@@ -548,17 +547,17 @@ var We = defineComponent({
       next: h
     }), () => {
       function v() {
-        let k;
+        let p;
         return createVNode("div", {
           class: "StepsGenerator"
         }, [createVNode(ElSteps, mergeProps({
           "align-center": true
         }, a, {
           active: d.value
-        }), Me(k = a.stepsOption.map((g) => createVNode(ElStep, g, {
+        }), Me(p = a.stepsOption.map((g) => createVNode(ElStep, g, {
           ...g == null ? void 0 : g.slots
-        }))) ? k : {
-          default: () => [k]
+        }))) ? p : {
+          default: () => [p]
         }), createVNode("div", {
           class: "container"
         }, [Object.keys(l).map((g, _) => createVNode("div", {
@@ -567,7 +566,7 @@ var We = defineComponent({
           }
         }, [l[g]()]))]), createVNode("div", {
           class: "btn-group"
-        }, [l.default ? l.default()[0].children : createVNode(Fragment, null, [d.value > 0 ? createVNode(ElButton, {
+        }, [l.default ? l.default(d.value) : createVNode(Fragment, null, [d.value > 0 ? createVNode(ElButton, {
           type: "primary",
           plain: true,
           onClick: t
@@ -585,12 +584,12 @@ var We = defineComponent({
     };
   }
 });
-var Be = (n, x, b, l) => {
-  if (!Array.isArray(n))
+var Be = (s, x, b, l) => {
+  if (!Array.isArray(s))
     return [];
   const y = [];
   let a = [];
-  return l && (a = Object.keys(l)), n.forEach((d) => {
+  return l && (a = Object.keys(l)), s.forEach((d) => {
     let t = {
       label: typeof d == "string" ? d : d[x],
       value: typeof d == "string" ? d : d[b]
@@ -600,7 +599,7 @@ var Be = (n, x, b, l) => {
     }), y.push(t);
   }), y;
 };
-var Ne = (n, x = []) => {
+var Ne = (s, x = []) => {
   const b = {
     input: "输入",
     "input-number": "输入",
@@ -618,7 +617,7 @@ var Ne = (n, x = []) => {
     upload: "上传",
     slot: "完善"
   };
-  return n.forEach((l) => {
+  return s.forEach((l) => {
     var a, d, t;
     const y = { required: true, message: `请${b[l.type] ?? "完善"}${l.formItem.label ?? ""}`, trigger: "change" };
     if (!x.includes(l.formItem.prop) && (((a = l.formItem) == null ? void 0 : a.rules) instanceof Object ? l.formItem.rules = [y, l.formItem.rules] : Array.isArray((d = l.formItem) == null ? void 0 : d.rules) ? l.formItem.rules.unshift(y) : l.formItem.rules = [y], ((t = l.formItem) == null ? void 0 : t.rules) instanceof Array))
@@ -626,7 +625,7 @@ var Ne = (n, x = []) => {
         let v = l.formItem.rules[h];
         v.message || (v.message = "格式有误");
       }
-  }), n;
+  }), s;
 };
 var He = Object.freeze(Object.defineProperty({
   __proto__: null,

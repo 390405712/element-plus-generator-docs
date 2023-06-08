@@ -1,47 +1,32 @@
 {
-  "hash": "bf59f9dc",
-  "browserHash": "3ba658dc",
+  "hash": "e1a02145",
+  "browserHash": "263c8949",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "6dd541dc",
+      "fileHash": "19bb7c46",
       "needsInterop": false
     },
     "element-plus": {
       "src": "../../../../node_modules/element-plus/es/index.mjs",
       "file": "element-plus.js",
-      "fileHash": "afb70c98",
+      "fileHash": "1c409938",
       "needsInterop": false
     },
     "element-plus-generator": {
-      "src": "../../../../../element-plus-generator-demo/node_modules/element-plus-generator/dist/index.js",
+      "src": "../../../../node_modules/element-plus-generator/dist/index.js",
       "file": "element-plus-generator.js",
-      "fileHash": "1b8df14f",
-      "needsInterop": false
-    },
-    "common-rules": {
-      "src": "../../../../../element-plus-generator-demo/node_modules/common-rules/dist/index.js",
-      "file": "common-rules.js",
-      "fileHash": "24f0a067",
-      "needsInterop": false
-    },
-    "element-plus-generator/lib/index": {
-      "src": "../../../../../element-plus-generator-demo/node_modules/element-plus-generator/lib/index.ts",
-      "file": "element-plus-generator_lib_index.js",
-      "fileHash": "9f269d54",
+      "fileHash": "7a9b0fa4",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-XHVEUFGG": {
-      "file": "chunk-XHVEUFGG.js"
+    "chunk-ALBYXT7B": {
+      "file": "chunk-ALBYXT7B.js"
     },
-    "chunk-4S7LXNVO": {
-      "file": "chunk-4S7LXNVO.js"
-    },
-    "chunk-4EOJPDL2": {
-      "file": "chunk-4EOJPDL2.js"
+    "chunk-YJNUPD57": {
+      "file": "chunk-YJNUPD57.js"
     }
   }
 }
